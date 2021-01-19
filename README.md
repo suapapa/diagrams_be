@@ -1,4 +1,10 @@
 # diagrams-server
 
-    $ docker build -t diagrams .
-    $ docker run -it --rm -v $(pwd)/sample:/diagrams --runtime=runsc diagrams diagram.py
+Build docker image:
+
+    $ cd server
+    $ docker build -t diagrams_server -f ./Dockerfile.gvisor .
+
+Run:
+
+    $ cat sample/k8s_diagram.py | docker run -i --rm --runtime=runsc diagrams_server:latest
