@@ -33,8 +33,9 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// read diagram python code from frontend
 	io.Copy(os.Stdout, r.Body)
 	defer r.Body.Close()
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 
 	// pass it to diagrams container (gVisor)
 	// write result png to respone writer
-	w.Write([]byte("hello world\n"))
+	w.Write([]byte(`{"err": "not implemented yet", "img": ""}`))
 }
