@@ -1,0 +1,5 @@
+docker:
+	docker build -t suapapa/diagrams-server-gvisor -f ./Dockerfile.gvisor .
+
+push: docker
+	docker push suapapa/diagrams-server-gvisor:latest

@@ -1,10 +1,19 @@
 # diagrams-server
 
-Build docker image:
+## sandbox
 
-    $ cd server
-    $ docker build -t diagrams_server -f ./Dockerfile.gvisor .
+Build and push docker image:
+
+    $ cd sandox
+    $ make push
 
 Run:
 
-    $ cat sample/k8s_diagram.py | docker run -i --rm --runtime=runsc diagrams_server:latest
+    $ cat sample/k8s_diagram.py | docker run -i --rm suapapa/diagrams-server-gvisor 
+
+## backend
+
+Run:
+
+    $ cd backend
+    $ $ cat ../sample/k8s_diagram.py | curl -X POST --data "$(</dev/stdin)" http://localhost:8080/diagram
