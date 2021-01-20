@@ -16,4 +16,5 @@ Run:
 Run:
 
     $ cd backend
-    $ $ cat ../sample/k8s_diagram.py | curl -X POST --data "$(</dev/stdin)" http://localhost:8080/diagram
+    $ go build && ./backend -l :8888
+    $ cat ../sample/k8s_diagram.py | curl -X POST --data "$(</dev/stdin)" http://localhost:8888/diagram
