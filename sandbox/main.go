@@ -3,10 +3,12 @@ package main
 import (
 	"encoding/base64"
 	"encoding/json"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"path/filepath"
 )
 
 type result struct {
@@ -31,7 +33,14 @@ func main() {
 	err = cmd.Run()
 	checkErr(err)
 
-	// check diagramOut exists
+	// find out diagramOut exists
+	match, err := filepath.Glob("*.png")
+	checkErr(err)
+	if len(match) != 1 {
+		checkErr(fmt.Errorf("fail to gen diagram png"))
+	}
+	diagramOut = match[0]
+
 	_, err = os.Stat(diagramOut)
 	checkErr(err)
 	defer os.RemoveAll(diagramOut)
