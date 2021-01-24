@@ -29,6 +29,7 @@ func main() {
 
 	http.HandleFunc("/diagram", handleDiagram)
 	http.HandleFunc("/nodes", handleNodes)
+	http.Handle("/", http.FileServer(http.Dir("./dist")))
 
 	log.Println("listen and serve at :8888...")
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
