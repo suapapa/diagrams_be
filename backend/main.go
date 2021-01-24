@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 	"os/exec"
 )
@@ -65,6 +66,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	// check if diagramsNodesJSON exists
 	_, err := os.Stat(diagramsNodesJSON)
 	// if not create one
