@@ -1,0 +1,6642 @@
+[
+  {
+    "module": "diagrams.openstack.apiproxies",
+    "node": "EC2API",
+    "icon": "ec2api.png"
+  },
+  {
+    "module": "diagrams.openstack.applicationlifecycle",
+    "node": "Freezer",
+    "icon": "freezer.png"
+  },
+  {
+    "module": "diagrams.openstack.applicationlifecycle",
+    "node": "Masakari",
+    "icon": "masakari.png"
+  },
+  {
+    "module": "diagrams.openstack.applicationlifecycle",
+    "node": "Murano",
+    "icon": "murano.png"
+  },
+  {
+    "module": "diagrams.openstack.applicationlifecycle",
+    "node": "Solum",
+    "icon": "solum.png"
+  },
+  {
+    "module": "diagrams.openstack.baremetal",
+    "node": "Cyborg",
+    "icon": "cyborg.png"
+  },
+  {
+    "module": "diagrams.openstack.baremetal",
+    "node": "Ironic",
+    "icon": "ironic.png"
+  },
+  {
+    "module": "diagrams.openstack.billing",
+    "node": "CloudKitty",
+    "icon": "cloudkitty.png"
+  },
+  {
+    "module": "diagrams.openstack.billing",
+    "node": "Cloudkitty",
+    "icon": "cloudkitty.png"
+  },
+  {
+    "module": "diagrams.openstack.compute",
+    "node": "Nova",
+    "icon": "nova.png"
+  },
+  {
+    "module": "diagrams.openstack.compute",
+    "node": "Qinling",
+    "icon": "qinling.png"
+  },
+  {
+    "module": "diagrams.openstack.compute",
+    "node": "Zun",
+    "icon": "zun.png"
+  },
+  {
+    "module": "diagrams.openstack.containerservices",
+    "node": "Kuryr",
+    "icon": "kuryr.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Ansible",
+    "icon": "ansible.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Charms",
+    "icon": "charms.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Chef",
+    "icon": "chef.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Helm",
+    "icon": "helm.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Kolla",
+    "icon": "kolla.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "KollaAnsible",
+    "icon": "kolla.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "TripleO",
+    "icon": "tripleo.png"
+  },
+  {
+    "module": "diagrams.openstack.deployment",
+    "node": "Tripleo",
+    "icon": "tripleo.png"
+  },
+  {
+    "module": "diagrams.openstack.frontend",
+    "node": "Horizon",
+    "icon": "horizon.png"
+  },
+  {
+    "module": "diagrams.openstack.monitoring",
+    "node": "Monasca",
+    "icon": "monasca.png"
+  },
+  {
+    "module": "diagrams.openstack.monitoring",
+    "node": "Telemetry",
+    "icon": "telemetry.png"
+  },
+  {
+    "module": "diagrams.openstack.multiregion",
+    "node": "Tricircle",
+    "icon": "tricircle.png"
+  },
+  {
+    "module": "diagrams.openstack.networking",
+    "node": "Designate",
+    "icon": "designate.png"
+  },
+  {
+    "module": "diagrams.openstack.networking",
+    "node": "Neutron",
+    "icon": "neutron.png"
+  },
+  {
+    "module": "diagrams.openstack.networking",
+    "node": "Octavia",
+    "icon": "octavia.png"
+  },
+  {
+    "module": "diagrams.openstack.nfv",
+    "node": "Tacker",
+    "icon": "tacker.png"
+  },
+  {
+    "module": "diagrams.openstack.optimization",
+    "node": "Congress",
+    "icon": "congress.png"
+  },
+  {
+    "module": "diagrams.openstack.optimization",
+    "node": "Rally",
+    "icon": "rally.png"
+  },
+  {
+    "module": "diagrams.openstack.optimization",
+    "node": "Vitrage",
+    "icon": "vitrage.png"
+  },
+  {
+    "module": "diagrams.openstack.optimization",
+    "node": "Watcher",
+    "icon": "watcher.png"
+  },
+  {
+    "module": "diagrams.openstack.orchestration",
+    "node": "Blazar",
+    "icon": "blazar.png"
+  },
+  {
+    "module": "diagrams.openstack.orchestration",
+    "node": "Heat",
+    "icon": "heat.png"
+  },
+  {
+    "module": "diagrams.openstack.orchestration",
+    "node": "Mistral",
+    "icon": "mistral.png"
+  },
+  {
+    "module": "diagrams.openstack.orchestration",
+    "node": "Senlin",
+    "icon": "senlin.png"
+  },
+  {
+    "module": "diagrams.openstack.orchestration",
+    "node": "Zaqar",
+    "icon": "zaqar.png"
+  },
+  {
+    "module": "diagrams.openstack.packaging",
+    "node": "LOCI",
+    "icon": "loci.png"
+  },
+  {
+    "module": "diagrams.openstack.packaging",
+    "node": "Puppet",
+    "icon": "puppet.png"
+  },
+  {
+    "module": "diagrams.openstack.packaging",
+    "node": "RPM",
+    "icon": "rpm.png"
+  },
+  {
+    "module": "diagrams.openstack.sharedservices",
+    "node": "Barbican",
+    "icon": "barbican.png"
+  },
+  {
+    "module": "diagrams.openstack.sharedservices",
+    "node": "Glance",
+    "icon": "glance.png"
+  },
+  {
+    "module": "diagrams.openstack.sharedservices",
+    "node": "Karbor",
+    "icon": "karbor.png"
+  },
+  {
+    "module": "diagrams.openstack.sharedservices",
+    "node": "Keystone",
+    "icon": "keystone.png"
+  },
+  {
+    "module": "diagrams.openstack.sharedservices",
+    "node": "Searchlight",
+    "icon": "searchlight.png"
+  },
+  {
+    "module": "diagrams.openstack.storage",
+    "node": "Cinder",
+    "icon": "cinder.png"
+  },
+  {
+    "module": "diagrams.openstack.storage",
+    "node": "Manila",
+    "icon": "manila.png"
+  },
+  {
+    "module": "diagrams.openstack.storage",
+    "node": "Swift",
+    "icon": "swift.png"
+  },
+  {
+    "module": "diagrams.openstack.user",
+    "node": "OpenStackClient",
+    "icon": "openstackclient.png"
+  },
+  {
+    "module": "diagrams.openstack.user",
+    "node": "Openstackclient",
+    "icon": "openstackclient.png"
+  },
+  {
+    "module": "diagrams.openstack.workloadprovisioning",
+    "node": "Magnum",
+    "icon": "magnum.png"
+  },
+  {
+    "module": "diagrams.openstack.workloadprovisioning",
+    "node": "Sahara",
+    "icon": "sahara.png"
+  },
+  {
+    "module": "diagrams.openstack.workloadprovisioning",
+    "node": "Trove",
+    "icon": "trove.png"
+  },
+  {
+    "module": "diagrams.onprem.aggregator",
+    "node": "Fluentd",
+    "icon": "fluentd.png"
+  },
+  {
+    "module": "diagrams.onprem.aggregator",
+    "node": "Vector",
+    "icon": "vector.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Beam",
+    "icon": "beam.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Databricks",
+    "icon": "databricks.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Dbt",
+    "icon": "dbt.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Flink",
+    "icon": "flink.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Hadoop",
+    "icon": "hadoop.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Hive",
+    "icon": "hive.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Metabase",
+    "icon": "metabase.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Norikra",
+    "icon": "norikra.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Singer",
+    "icon": "singer.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Spark",
+    "icon": "spark.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Storm",
+    "icon": "storm.png"
+  },
+  {
+    "module": "diagrams.onprem.analytics",
+    "node": "Tableau",
+    "icon": "tableau.png"
+  },
+  {
+    "module": "diagrams.onprem.auth",
+    "node": "BuzzfeedSso",
+    "icon": "buzzfeed-sso.png"
+  },
+  {
+    "module": "diagrams.onprem.auth",
+    "node": "Oauth2Proxy",
+    "icon": "oauth2-proxy.png"
+  },
+  {
+    "module": "diagrams.onprem.cd",
+    "node": "Spinnaker",
+    "icon": "spinnaker.png"
+  },
+  {
+    "module": "diagrams.onprem.cd",
+    "node": "Tekton",
+    "icon": "tekton.png"
+  },
+  {
+    "module": "diagrams.onprem.cd",
+    "node": "TektonCli",
+    "icon": "tekton-cli.png"
+  },
+  {
+    "module": "diagrams.onprem.certificates",
+    "node": "CertManager",
+    "icon": "cert-manager.png"
+  },
+  {
+    "module": "diagrams.onprem.certificates",
+    "node": "LetsEncrypt",
+    "icon": "lets-encrypt.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "CircleCI",
+    "icon": "circleci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Circleci",
+    "icon": "circleci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "ConcourseCI",
+    "icon": "concourseci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Concourseci",
+    "icon": "concourseci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "DroneCI",
+    "icon": "droneci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Droneci",
+    "icon": "droneci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "GithubActions",
+    "icon": "github-actions.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "GitlabCI",
+    "icon": "gitlabci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Gitlabci",
+    "icon": "gitlabci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Jenkins",
+    "icon": "jenkins.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "TC",
+    "icon": "teamcity.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Teamcity",
+    "icon": "teamcity.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "TravisCI",
+    "icon": "travisci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Travisci",
+    "icon": "travisci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "ZuulCI",
+    "icon": "zuulci.png"
+  },
+  {
+    "module": "diagrams.onprem.ci",
+    "node": "Zuulci",
+    "icon": "zuulci.png"
+  },
+  {
+    "module": "diagrams.onprem.client",
+    "node": "Client",
+    "icon": "client.png"
+  },
+  {
+    "module": "diagrams.onprem.client",
+    "node": "User",
+    "icon": "user.png"
+  },
+  {
+    "module": "diagrams.onprem.client",
+    "node": "Users",
+    "icon": "users.png"
+  },
+  {
+    "module": "diagrams.onprem.compute",
+    "node": "Nomad",
+    "icon": "nomad.png"
+  },
+  {
+    "module": "diagrams.onprem.compute",
+    "node": "Server",
+    "icon": "server.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Containerd",
+    "icon": "containerd.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Crio",
+    "icon": "crio.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Docker",
+    "icon": "docker.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Firecracker",
+    "icon": "firecracker.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Gvisor",
+    "icon": "gvisor.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "LXC",
+    "icon": "lxc.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Lxc",
+    "icon": "lxc.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "RKT",
+    "icon": "rkt.png"
+  },
+  {
+    "module": "diagrams.onprem.container",
+    "node": "Rkt",
+    "icon": "rkt.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Cassandra",
+    "icon": "cassandra.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "ClickHouse",
+    "icon": "clickhouse.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Clickhouse",
+    "icon": "clickhouse.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "CockroachDB",
+    "icon": "cockroachdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Cockroachdb",
+    "icon": "cockroachdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "CouchDB",
+    "icon": "couchdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Couchbase",
+    "icon": "couchbase.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Couchdb",
+    "icon": "couchdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Dgraph",
+    "icon": "dgraph.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Druid",
+    "icon": "druid.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "HBase",
+    "icon": "hbase.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Hbase",
+    "icon": "hbase.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "InfluxDB",
+    "icon": "influxdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Influxdb",
+    "icon": "influxdb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "JanusGraph",
+    "icon": "janusgraph.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Janusgraph",
+    "icon": "janusgraph.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "MSSQL",
+    "icon": "mssql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "MariaDB",
+    "icon": "mariadb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Mariadb",
+    "icon": "mariadb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "MongoDB",
+    "icon": "mongodb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Mongodb",
+    "icon": "mongodb.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Mssql",
+    "icon": "mssql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "MySQL",
+    "icon": "mysql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Mysql",
+    "icon": "mysql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Neo4J",
+    "icon": "neo4j.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Oracle",
+    "icon": "oracle.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "PostgreSQL",
+    "icon": "postgresql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Postgresql",
+    "icon": "postgresql.png"
+  },
+  {
+    "module": "diagrams.onprem.database",
+    "node": "Scylla",
+    "icon": "scylla.png"
+  },
+  {
+    "module": "diagrams.onprem.dns",
+    "node": "Coredns",
+    "icon": "coredns.png"
+  },
+  {
+    "module": "diagrams.onprem.dns",
+    "node": "Powerdns",
+    "icon": "powerdns.png"
+  },
+  {
+    "module": "diagrams.onprem.etl",
+    "node": "Embulk",
+    "icon": "embulk.png"
+  },
+  {
+    "module": "diagrams.onprem.gitops",
+    "node": "ArgoCD",
+    "icon": "argocd.png"
+  },
+  {
+    "module": "diagrams.onprem.gitops",
+    "node": "Argocd",
+    "icon": "argocd.png"
+  },
+  {
+    "module": "diagrams.onprem.gitops",
+    "node": "Flagger",
+    "icon": "flagger.png"
+  },
+  {
+    "module": "diagrams.onprem.gitops",
+    "node": "Flux",
+    "icon": "flux.png"
+  },
+  {
+    "module": "diagrams.onprem.iac",
+    "node": "Ansible",
+    "icon": "ansible.png"
+  },
+  {
+    "module": "diagrams.onprem.iac",
+    "node": "Atlantis",
+    "icon": "atlantis.png"
+  },
+  {
+    "module": "diagrams.onprem.iac",
+    "node": "Awx",
+    "icon": "awx.png"
+  },
+  {
+    "module": "diagrams.onprem.iac",
+    "node": "Terraform",
+    "icon": "terraform.png"
+  },
+  {
+    "module": "diagrams.onprem.identity",
+    "node": "Dex",
+    "icon": "dex.png"
+  },
+  {
+    "module": "diagrams.onprem.inmemory",
+    "node": "Aerospike",
+    "icon": "aerospike.png"
+  },
+  {
+    "module": "diagrams.onprem.inmemory",
+    "node": "Hazelcast",
+    "icon": "hazelcast.png"
+  },
+  {
+    "module": "diagrams.onprem.inmemory",
+    "node": "Memcached",
+    "icon": "memcached.png"
+  },
+  {
+    "module": "diagrams.onprem.inmemory",
+    "node": "Redis",
+    "icon": "redis.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "FluentBit",
+    "icon": "fluentbit.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "Fluentbit",
+    "icon": "fluentbit.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "Graylog",
+    "icon": "graylog.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "Loki",
+    "icon": "loki.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "RSyslog",
+    "icon": "rsyslog.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "Rsyslog",
+    "icon": "rsyslog.png"
+  },
+  {
+    "module": "diagrams.onprem.logging",
+    "node": "SyslogNg",
+    "icon": "syslog-ng.png"
+  },
+  {
+    "module": "diagrams.onprem.mlops",
+    "node": "Polyaxon",
+    "icon": "polyaxon.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Cortex",
+    "icon": "cortex.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Datadog",
+    "icon": "datadog.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Grafana",
+    "icon": "grafana.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Prometheus",
+    "icon": "prometheus.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "PrometheusOperator",
+    "icon": "prometheus-operator.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Sentry",
+    "icon": "sentry.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Splunk",
+    "icon": "splunk.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Thanos",
+    "icon": "thanos.png"
+  },
+  {
+    "module": "diagrams.onprem.monitoring",
+    "node": "Zabbix",
+    "icon": "zabbix.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Apache",
+    "icon": "apache.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Bind9",
+    "icon": "bind-9.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Caddy",
+    "icon": "caddy.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Consul",
+    "icon": "consul.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "ETCD",
+    "icon": "etcd.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Envoy",
+    "icon": "envoy.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Etcd",
+    "icon": "etcd.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Glassfish",
+    "icon": "glassfish.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Gunicorn",
+    "icon": "gunicorn.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "HAProxy",
+    "icon": "haproxy.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Haproxy",
+    "icon": "haproxy.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Internet",
+    "icon": "internet.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Istio",
+    "icon": "istio.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Jbossas",
+    "icon": "jbossas.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Jetty",
+    "icon": "jetty.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Kong",
+    "icon": "kong.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Linkerd",
+    "icon": "linkerd.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Nginx",
+    "icon": "nginx.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "OPNSense",
+    "icon": "opnsense.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "OSM",
+    "icon": "open-service-mesh.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Ocelot",
+    "icon": "ocelot.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "OpenServiceMesh",
+    "icon": "open-service-mesh.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Opnsense",
+    "icon": "opnsense.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "PFSense",
+    "icon": "pfsense.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Pfsense",
+    "icon": "pfsense.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Pomerium",
+    "icon": "pomerium.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Powerdns",
+    "icon": "powerdns.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Tomcat",
+    "icon": "tomcat.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Traefik",
+    "icon": "traefik.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "VyOS",
+    "icon": "vyos.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Vyos",
+    "icon": "vyos.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Wildfly",
+    "icon": "wildfly.png"
+  },
+  {
+    "module": "diagrams.onprem.network",
+    "node": "Zookeeper",
+    "icon": "zookeeper.png"
+  },
+  {
+    "module": "diagrams.onprem.proxmox",
+    "node": "ProxmoxVE",
+    "icon": "pve.png"
+  },
+  {
+    "module": "diagrams.onprem.proxmox",
+    "node": "Pve",
+    "icon": "pve.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "ActiveMQ",
+    "icon": "activemq.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Activemq",
+    "icon": "activemq.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Celery",
+    "icon": "celery.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Kafka",
+    "icon": "kafka.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Nats",
+    "icon": "nats.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "RabbitMQ",
+    "icon": "rabbitmq.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Rabbitmq",
+    "icon": "rabbitmq.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "ZeroMQ",
+    "icon": "zeromq.png"
+  },
+  {
+    "module": "diagrams.onprem.queue",
+    "node": "Zeromq",
+    "icon": "zeromq.png"
+  },
+  {
+    "module": "diagrams.onprem.search",
+    "node": "Solr",
+    "icon": "solr.png"
+  },
+  {
+    "module": "diagrams.onprem.security",
+    "node": "Trivy",
+    "icon": "trivy.png"
+  },
+  {
+    "module": "diagrams.onprem.security",
+    "node": "Vault",
+    "icon": "vault.png"
+  },
+  {
+    "module": "diagrams.onprem.storage",
+    "node": "CEPH",
+    "icon": "ceph.png"
+  },
+  {
+    "module": "diagrams.onprem.storage",
+    "node": "CEPH_OSD",
+    "icon": "ceph-osd.png"
+  },
+  {
+    "module": "diagrams.onprem.storage",
+    "node": "Ceph",
+    "icon": "ceph.png"
+  },
+  {
+    "module": "diagrams.onprem.storage",
+    "node": "CephOsd",
+    "icon": "ceph-osd.png"
+  },
+  {
+    "module": "diagrams.onprem.storage",
+    "node": "Glusterfs",
+    "icon": "glusterfs.png"
+  },
+  {
+    "module": "diagrams.onprem.tracing",
+    "node": "Jaeger",
+    "icon": "jaeger.png"
+  },
+  {
+    "module": "diagrams.onprem.vcs",
+    "node": "Git",
+    "icon": "git.png"
+  },
+  {
+    "module": "diagrams.onprem.vcs",
+    "node": "Github",
+    "icon": "github.png"
+  },
+  {
+    "module": "diagrams.onprem.vcs",
+    "node": "Gitlab",
+    "icon": "gitlab.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "Airflow",
+    "icon": "airflow.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "Digdag",
+    "icon": "digdag.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "KubeFlow",
+    "icon": "kubeflow.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "Kubeflow",
+    "icon": "kubeflow.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "NiFi",
+    "icon": "nifi.png"
+  },
+  {
+    "module": "diagrams.onprem.workflow",
+    "node": "Nifi",
+    "icon": "nifi.png"
+  },
+  {
+    "module": "diagrams.outscale.compute",
+    "node": "Compute",
+    "icon": "compute.png"
+  },
+  {
+    "module": "diagrams.outscale.compute",
+    "node": "DirectConnect",
+    "icon": "direct-connect.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "ClientVpn",
+    "icon": "client-vpn.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "InternetService",
+    "icon": "internet-service.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "LoadBalancer",
+    "icon": "load-balancer.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "NatService",
+    "icon": "nat-service.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "Net",
+    "icon": "net.png"
+  },
+  {
+    "module": "diagrams.outscale.network",
+    "node": "SiteToSiteVpng",
+    "icon": "site-to-site-vpng.png"
+  },
+  {
+    "module": "diagrams.outscale.security",
+    "node": "Firewall",
+    "icon": "firewall.png"
+  },
+  {
+    "module": "diagrams.outscale.security",
+    "node": "IdentityAndAccessManagement",
+    "icon": "identity-and-access-management.png"
+  },
+  {
+    "module": "diagrams.outscale.storage",
+    "node": "SimpleStorageService",
+    "icon": "simple-storage-service.png"
+  },
+  {
+    "module": "diagrams.outscale.storage",
+    "node": "Storage",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Alerting",
+    "icon": "alerting.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Beats",
+    "icon": "beats.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Elasticsearch",
+    "icon": "elasticsearch.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Kibana",
+    "icon": "kibana.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "LogStash",
+    "icon": "logstash.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Logstash",
+    "icon": "logstash.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "MachineLearning",
+    "icon": "machine-learning.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Maps",
+    "icon": "maps.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Monitoring",
+    "icon": "monitoring.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "SecuritySettings",
+    "icon": "security-settings.png"
+  },
+  {
+    "module": "diagrams.elastic.elasticsearch",
+    "node": "Sql",
+    "icon": "sql.png"
+  },
+  {
+    "module": "diagrams.elastic.enterprisesearch",
+    "node": "AppSearch",
+    "icon": "app-search.png"
+  },
+  {
+    "module": "diagrams.elastic.enterprisesearch",
+    "node": "EnterpriseSearch",
+    "icon": "enterprise-search.png"
+  },
+  {
+    "module": "diagrams.elastic.enterprisesearch",
+    "node": "SiteSearch",
+    "icon": "site-search.png"
+  },
+  {
+    "module": "diagrams.elastic.enterprisesearch",
+    "node": "WorkplaceSearch",
+    "icon": "workplace-search.png"
+  },
+  {
+    "module": "diagrams.elastic.observability",
+    "node": "APM",
+    "icon": "apm.png"
+  },
+  {
+    "module": "diagrams.elastic.observability",
+    "node": "Logs",
+    "icon": "logs.png"
+  },
+  {
+    "module": "diagrams.elastic.observability",
+    "node": "Metrics",
+    "icon": "metrics.png"
+  },
+  {
+    "module": "diagrams.elastic.observability",
+    "node": "Observability",
+    "icon": "observability.png"
+  },
+  {
+    "module": "diagrams.elastic.observability",
+    "node": "Uptime",
+    "icon": "uptime.png"
+  },
+  {
+    "module": "diagrams.elastic.orchestration",
+    "node": "ECE",
+    "icon": "ece.png"
+  },
+  {
+    "module": "diagrams.elastic.orchestration",
+    "node": "ECK",
+    "icon": "eck.png"
+  },
+  {
+    "module": "diagrams.elastic.saas",
+    "node": "Cloud",
+    "icon": "cloud.png"
+  },
+  {
+    "module": "diagrams.elastic.saas",
+    "node": "Elastic",
+    "icon": "elastic.png"
+  },
+  {
+    "module": "diagrams.elastic.security",
+    "node": "Endpoint",
+    "icon": "endpoint.png"
+  },
+  {
+    "module": "diagrams.elastic.security",
+    "node": "SIEM",
+    "icon": "siem.png"
+  },
+  {
+    "module": "diagrams.elastic.security",
+    "node": "Security",
+    "icon": "security.png"
+  },
+  {
+    "module": "diagrams.firebase.base",
+    "node": "Firebase",
+    "icon": "firebase.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "Authentication",
+    "icon": "authentication.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "Firestore",
+    "icon": "firestore.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "Functions",
+    "icon": "functions.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "Hosting",
+    "icon": "hosting.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "MLKit",
+    "icon": "ml-kit.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "RealtimeDatabase",
+    "icon": "realtime-database.png"
+  },
+  {
+    "module": "diagrams.firebase.develop",
+    "node": "Storage",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.firebase.extentions",
+    "node": "Extensions",
+    "icon": "extensions.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "ABTesting",
+    "icon": "ab-testing.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "AppIndexing",
+    "icon": "app-indexing.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "DynamicLinks",
+    "icon": "dynamic-links.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "FCM",
+    "icon": "messaging.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "InAppMessaging",
+    "icon": "in-app-messaging.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "Invites",
+    "icon": "invites.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "Messaging",
+    "icon": "messaging.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "Predictions",
+    "icon": "predictions.png"
+  },
+  {
+    "module": "diagrams.firebase.grow",
+    "node": "RemoteConfig",
+    "icon": "remote-config.png"
+  },
+  {
+    "module": "diagrams.firebase.quality",
+    "node": "AppDistribution",
+    "icon": "app-distribution.png"
+  },
+  {
+    "module": "diagrams.firebase.quality",
+    "node": "CrashReporting",
+    "icon": "crash-reporting.png"
+  },
+  {
+    "module": "diagrams.firebase.quality",
+    "node": "Crashlytics",
+    "icon": "crashlytics.png"
+  },
+  {
+    "module": "diagrams.firebase.quality",
+    "node": "PerformanceMonitoring",
+    "icon": "performance-monitoring.png"
+  },
+  {
+    "module": "diagrams.firebase.quality",
+    "node": "TestLab",
+    "icon": "test-lab.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.analytics",
+    "node": "AnalyticDb",
+    "icon": "analytic-db.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.analytics",
+    "node": "ClickHouse",
+    "icon": "click-house.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.analytics",
+    "node": "DataLakeAnalytics",
+    "icon": "data-lake-analytics.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.analytics",
+    "node": "ElaticMapReduce",
+    "icon": "elatic-map-reduce.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.analytics",
+    "node": "OpenSearch",
+    "icon": "open-search.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "ApiGateway",
+    "icon": "api-gateway.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "BeeBot",
+    "icon": "bee-bot.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "BlockchainAsAService",
+    "icon": "blockchain-as-a-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "CloudCallCenter",
+    "icon": "cloud-call-center.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "CodePipeline",
+    "icon": "code-pipeline.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "DirectMail",
+    "icon": "direct-mail.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "LogService",
+    "icon": "log-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "MNS",
+    "icon": "message-notification-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "MessageNotificationService",
+    "icon": "message-notification-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "NodeJsPerformancePlatform",
+    "icon": "node-js-performance-platform.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "OpenSearch",
+    "icon": "open-search.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "PTS",
+    "icon": "performance-testing-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "PerformanceTestingService",
+    "icon": "performance-testing-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "RdCloud",
+    "icon": "rd-cloud.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "SCA",
+    "icon": "smart-conversation-analysis.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "SLS",
+    "icon": "log-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "SmartConversationAnalysis",
+    "icon": "smart-conversation-analysis.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.application",
+    "node": "Yida",
+    "icon": "yida.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.communication",
+    "node": "DirectMail",
+    "icon": "direct-mail.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.communication",
+    "node": "MobilePush",
+    "icon": "mobile-push.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "AutoScaling",
+    "icon": "auto-scaling.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "BatchCompute",
+    "icon": "batch-compute.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ContainerRegistry",
+    "icon": "container-registry.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ContainerService",
+    "icon": "container-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ECI",
+    "icon": "elastic-container-instance.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ECS",
+    "icon": "elastic-compute-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "EHPC",
+    "icon": "elastic-high-performance-computing.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ESS",
+    "icon": "auto-scaling.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ElasticComputeService",
+    "icon": "elastic-compute-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ElasticContainerInstance",
+    "icon": "elastic-container-instance.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ElasticHighPerformanceComputing",
+    "icon": "elastic-high-performance-computing.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ElasticSearch",
+    "icon": "elastic-search.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "FC",
+    "icon": "function-compute.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "FunctionCompute",
+    "icon": "function-compute.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "OOS",
+    "icon": "operation-orchestration-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "OperationOrchestrationService",
+    "icon": "operation-orchestration-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ROS",
+    "icon": "resource-orchestration-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ResourceOrchestrationService",
+    "icon": "resource-orchestration-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "SAE",
+    "icon": "serverless-app-engine.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "SAS",
+    "icon": "simple-application-server.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "SLB",
+    "icon": "server-load-balancer.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ServerLoadBalancer",
+    "icon": "server-load-balancer.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "ServerlessAppEngine",
+    "icon": "serverless-app-engine.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "SimpleApplicationServer",
+    "icon": "simple-application-server.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "WAS",
+    "icon": "web-app-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.compute",
+    "node": "WebAppService",
+    "icon": "web-app-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbCassandra",
+    "icon": "apsaradb-cassandra.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbHbase",
+    "icon": "apsaradb-hbase.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbMemcache",
+    "icon": "apsaradb-memcache.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbMongodb",
+    "icon": "apsaradb-mongodb.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbOceanbase",
+    "icon": "apsaradb-oceanbase.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbPolardb",
+    "icon": "apsaradb-polardb.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbPostgresql",
+    "icon": "apsaradb-postgresql.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbPpas",
+    "icon": "apsaradb-ppas.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbRedis",
+    "icon": "apsaradb-redis.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "ApsaradbSqlserver",
+    "icon": "apsaradb-sqlserver.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DBS",
+    "icon": "database-backup-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DMS",
+    "icon": "data-management-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DRDS",
+    "icon": "disribute-relational-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DTS",
+    "icon": "data-transmission-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DataManagementService",
+    "icon": "data-management-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DataTransmissionService",
+    "icon": "data-transmission-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DatabaseBackupService",
+    "icon": "database-backup-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "DisributeRelationalDatabaseService",
+    "icon": "disribute-relational-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "GDS",
+    "icon": "graph-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "GraphDatabaseService",
+    "icon": "graph-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "HybriddbForMysql",
+    "icon": "hybriddb-for-mysql.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "RDS",
+    "icon": "relational-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.database",
+    "node": "RelationalDatabaseService",
+    "icon": "relational-database-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.iot",
+    "node": "IotInternetDeviceId",
+    "icon": "iot-internet-device-id.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.iot",
+    "node": "IotLinkWan",
+    "icon": "iot-link-wan.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.iot",
+    "node": "IotMobileConnectionPackage",
+    "icon": "iot-mobile-connection-package.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.iot",
+    "node": "IotPlatform",
+    "icon": "iot-platform.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "CEN",
+    "icon": "cloud-enterprise-network.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "Cdn",
+    "icon": "cdn.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "CloudEnterpriseNetwork",
+    "icon": "cloud-enterprise-network.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "EIP",
+    "icon": "elastic-ip-address.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "ElasticIpAddress",
+    "icon": "elastic-ip-address.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "ExpressConnect",
+    "icon": "express-connect.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "NatGateway",
+    "icon": "nat-gateway.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "SLB",
+    "icon": "server-load-balancer.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "ServerLoadBalancer",
+    "icon": "server-load-balancer.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "SmartAccessGateway",
+    "icon": "smart-access-gateway.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "VPC",
+    "icon": "virtual-private-cloud.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "VirtualPrivateCloud",
+    "icon": "virtual-private-cloud.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.network",
+    "node": "VpnGateway",
+    "icon": "vpn-gateway.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "ABS",
+    "icon": "anti-bot-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "AS",
+    "icon": "antifraud-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "AntiBotService",
+    "icon": "anti-bot-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "AntiDdosBasic",
+    "icon": "anti-ddos-basic.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "AntiDdosPro",
+    "icon": "anti-ddos-pro.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "AntifraudService",
+    "icon": "antifraud-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "BastionHost",
+    "icon": "bastion-host.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "CFW",
+    "icon": "cloud-firewall.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "CM",
+    "icon": "content-moderation.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "CloudFirewall",
+    "icon": "cloud-firewall.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "CloudSecurityScanner",
+    "icon": "cloud-security-scanner.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "ContentModeration",
+    "icon": "content-moderation.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "CrowdsourcedSecurityTesting",
+    "icon": "crowdsourced-security-testing.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "DES",
+    "icon": "data-encryption-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "DataEncryptionService",
+    "icon": "data-encryption-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "DbAudit",
+    "icon": "db-audit.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "GameShield",
+    "icon": "game-shield.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "IdVerification",
+    "icon": "id-verification.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "ManagedSecurityService",
+    "icon": "managed-security-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "SecurityCenter",
+    "icon": "security-center.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "ServerGuard",
+    "icon": "server-guard.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "SslCertificates",
+    "icon": "ssl-certificates.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "WAF",
+    "icon": "web-application-firewall.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.security",
+    "node": "WebApplicationFirewall",
+    "icon": "web-application-firewall.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "CloudStorageGateway",
+    "icon": "cloud-storage-gateway.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "FileStorageHdfs",
+    "icon": "file-storage-hdfs.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "FileStorageNas",
+    "icon": "file-storage-nas.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "HBR",
+    "icon": "hybrid-backup-recovery.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "HDFS",
+    "icon": "file-storage-hdfs.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "HDR",
+    "icon": "hybrid-cloud-disaster-recovery.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "HybridBackupRecovery",
+    "icon": "hybrid-backup-recovery.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "HybridCloudDisasterRecovery",
+    "icon": "hybrid-cloud-disaster-recovery.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "Imm",
+    "icon": "imm.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "NAS",
+    "icon": "file-storage-nas.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "OSS",
+    "icon": "object-storage-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "OTS",
+    "icon": "object-table-store.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "ObjectStorageService",
+    "icon": "object-storage-service.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.storage",
+    "node": "ObjectTableStore",
+    "icon": "object-table-store.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.web",
+    "node": "Dns",
+    "icon": "dns.png"
+  },
+  {
+    "module": "diagrams.alibabacloud.web",
+    "node": "Domain",
+    "icon": "domain.png"
+  },
+  {
+    "module": "diagrams.generic.blank",
+    "node": "Blank",
+    "icon": "blank.png"
+  },
+  {
+    "module": "diagrams.generic.compute",
+    "node": "Rack",
+    "icon": "rack.png"
+  },
+  {
+    "module": "diagrams.generic.database",
+    "node": "SQL",
+    "icon": "sql.png"
+  },
+  {
+    "module": "diagrams.generic.device",
+    "node": "Mobile",
+    "icon": "mobile.png"
+  },
+  {
+    "module": "diagrams.generic.device",
+    "node": "Tablet",
+    "icon": "tablet.png"
+  },
+  {
+    "module": "diagrams.generic.network",
+    "node": "Firewall",
+    "icon": "firewall.png"
+  },
+  {
+    "module": "diagrams.generic.network",
+    "node": "Router",
+    "icon": "router.png"
+  },
+  {
+    "module": "diagrams.generic.network",
+    "node": "Subnet",
+    "icon": "subnet.png"
+  },
+  {
+    "module": "diagrams.generic.network",
+    "node": "Switch",
+    "icon": "switch.png"
+  },
+  {
+    "module": "diagrams.generic.network",
+    "node": "VPN",
+    "icon": "vpn.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "Android",
+    "icon": "android.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "Centos",
+    "icon": "centos.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "IOS",
+    "icon": "ios.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "LinuxGeneral",
+    "icon": "linux-general.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "Suse",
+    "icon": "suse.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "Ubuntu",
+    "icon": "ubuntu.png"
+  },
+  {
+    "module": "diagrams.generic.os",
+    "node": "Windows",
+    "icon": "windows.png"
+  },
+  {
+    "module": "diagrams.generic.place",
+    "node": "Datacenter",
+    "icon": "datacenter.png"
+  },
+  {
+    "module": "diagrams.generic.storage",
+    "node": "Storage",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.generic.virtualization",
+    "node": "Virtualbox",
+    "icon": "virtualbox.png"
+  },
+  {
+    "module": "diagrams.generic.virtualization",
+    "node": "Vmware",
+    "icon": "vmware.png"
+  },
+  {
+    "module": "diagrams.generic.virtualization",
+    "node": "XEN",
+    "icon": "xen.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Angular",
+    "icon": "angular.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Backbone",
+    "icon": "backbone.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Django",
+    "icon": "django.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Ember",
+    "icon": "ember.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Flask",
+    "icon": "flask.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Flutter",
+    "icon": "flutter.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Laravel",
+    "icon": "laravel.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Rails",
+    "icon": "rails.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "React",
+    "icon": "react.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Spring",
+    "icon": "spring.png"
+  },
+  {
+    "module": "diagrams.programming.framework",
+    "node": "Vue",
+    "icon": "vue.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Bash",
+    "icon": "bash.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "C",
+    "icon": "c.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Cpp",
+    "icon": "cpp.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Csharp",
+    "icon": "csharp.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Dart",
+    "icon": "dart.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Elixir",
+    "icon": "elixir.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Erlang",
+    "icon": "erlang.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Go",
+    "icon": "go.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Java",
+    "icon": "java.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "JavaScript",
+    "icon": "javascript.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Javascript",
+    "icon": "javascript.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Kotlin",
+    "icon": "kotlin.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Matlab",
+    "icon": "matlab.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "NodeJS",
+    "icon": "nodejs.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Nodejs",
+    "icon": "nodejs.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "PHP",
+    "icon": "php.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Php",
+    "icon": "php.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Python",
+    "icon": "python.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "R",
+    "icon": "r.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Ruby",
+    "icon": "ruby.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Rust",
+    "icon": "rust.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Swift",
+    "icon": "swift.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "TypeScript",
+    "icon": "typescript.png"
+  },
+  {
+    "module": "diagrams.programming.language",
+    "node": "Typescript",
+    "icon": "typescript.png"
+  },
+  {
+    "module": "diagrams.saas.alerting",
+    "node": "Opsgenie",
+    "icon": "opsgenie.png"
+  },
+  {
+    "module": "diagrams.saas.alerting",
+    "node": "Pushover",
+    "icon": "pushover.png"
+  },
+  {
+    "module": "diagrams.saas.analytics",
+    "node": "Snowflake",
+    "icon": "snowflake.png"
+  },
+  {
+    "module": "diagrams.saas.analytics",
+    "node": "Stitch",
+    "icon": "stitch.png"
+  },
+  {
+    "module": "diagrams.saas.cdn",
+    "node": "Akamai",
+    "icon": "akamai.png"
+  },
+  {
+    "module": "diagrams.saas.cdn",
+    "node": "Cloudflare",
+    "icon": "cloudflare.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "Discord",
+    "icon": "discord.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "Mattermost",
+    "icon": "mattermost.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "RocketChat",
+    "icon": "rocket-chat.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "Slack",
+    "icon": "slack.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "Teams",
+    "icon": "teams.png"
+  },
+  {
+    "module": "diagrams.saas.chat",
+    "node": "Telegram",
+    "icon": "telegram.png"
+  },
+  {
+    "module": "diagrams.saas.identity",
+    "node": "Auth0",
+    "icon": "auth0.png"
+  },
+  {
+    "module": "diagrams.saas.identity",
+    "node": "Okta",
+    "icon": "okta.png"
+  },
+  {
+    "module": "diagrams.saas.logging",
+    "node": "DataDog",
+    "icon": "datadog.png"
+  },
+  {
+    "module": "diagrams.saas.logging",
+    "node": "Datadog",
+    "icon": "datadog.png"
+  },
+  {
+    "module": "diagrams.saas.logging",
+    "node": "Papertrail",
+    "icon": "papertrail.png"
+  },
+  {
+    "module": "diagrams.saas.media",
+    "node": "Cloudinary",
+    "icon": "cloudinary.png"
+  },
+  {
+    "module": "diagrams.saas.recommendation",
+    "node": "Recombee",
+    "icon": "recombee.png"
+  },
+  {
+    "module": "diagrams.saas.social",
+    "node": "Facebook",
+    "icon": "facebook.png"
+  },
+  {
+    "module": "diagrams.saas.social",
+    "node": "Twitter",
+    "icon": "twitter.png"
+  },
+  {
+    "module": "diagrams.k8s.chaos",
+    "node": "ChaosMesh",
+    "icon": "chaos-mesh.png"
+  },
+  {
+    "module": "diagrams.k8s.chaos",
+    "node": "LitmusChaos",
+    "icon": "litmus-chaos.png"
+  },
+  {
+    "module": "diagrams.k8s.clusterconfig",
+    "node": "HPA",
+    "icon": "hpa.png"
+  },
+  {
+    "module": "diagrams.k8s.clusterconfig",
+    "node": "HorizontalPodAutoscaler",
+    "icon": "hpa.png"
+  },
+  {
+    "module": "diagrams.k8s.clusterconfig",
+    "node": "LimitRange",
+    "icon": "limits.png"
+  },
+  {
+    "module": "diagrams.k8s.clusterconfig",
+    "node": "Limits",
+    "icon": "limits.png"
+  },
+  {
+    "module": "diagrams.k8s.clusterconfig",
+    "node": "Quota",
+    "icon": "quota.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "Cronjob",
+    "icon": "cronjob.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "DS",
+    "icon": "ds.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "DaemonSet",
+    "icon": "ds.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "Deploy",
+    "icon": "deploy.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "Deployment",
+    "icon": "deploy.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "Job",
+    "icon": "job.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "Pod",
+    "icon": "pod.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "RS",
+    "icon": "rs.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "ReplicaSet",
+    "icon": "rs.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "STS",
+    "icon": "sts.png"
+  },
+  {
+    "module": "diagrams.k8s.compute",
+    "node": "StatefulSet",
+    "icon": "sts.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "API",
+    "icon": "api.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "APIServer",
+    "icon": "api.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "CCM",
+    "icon": "c-c-m.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "CM",
+    "icon": "c-m.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "ControllerManager",
+    "icon": "c-m.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "KProxy",
+    "icon": "k-proxy.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "KubeProxy",
+    "icon": "k-proxy.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "Kubelet",
+    "icon": "kubelet.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "Sched",
+    "icon": "sched.png"
+  },
+  {
+    "module": "diagrams.k8s.controlplane",
+    "node": "Scheduler",
+    "icon": "sched.png"
+  },
+  {
+    "module": "diagrams.k8s.ecosystem",
+    "node": "ExternalDns",
+    "icon": "external-dns.png"
+  },
+  {
+    "module": "diagrams.k8s.ecosystem",
+    "node": "Helm",
+    "icon": "helm.png"
+  },
+  {
+    "module": "diagrams.k8s.ecosystem",
+    "node": "Krew",
+    "icon": "krew.png"
+  },
+  {
+    "module": "diagrams.k8s.ecosystem",
+    "node": "Kustomize",
+    "icon": "kustomize.png"
+  },
+  {
+    "module": "diagrams.k8s.group",
+    "node": "NS",
+    "icon": "ns.png"
+  },
+  {
+    "module": "diagrams.k8s.group",
+    "node": "Namespace",
+    "icon": "ns.png"
+  },
+  {
+    "module": "diagrams.k8s.infra",
+    "node": "ETCD",
+    "icon": "etcd.png"
+  },
+  {
+    "module": "diagrams.k8s.infra",
+    "node": "Master",
+    "icon": "master.png"
+  },
+  {
+    "module": "diagrams.k8s.infra",
+    "node": "Node",
+    "icon": "node.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Endpoint",
+    "icon": "ep.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Ep",
+    "icon": "ep.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Ing",
+    "icon": "ing.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Ingress",
+    "icon": "ing.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Netpol",
+    "icon": "netpol.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "NetworkPolicy",
+    "icon": "netpol.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "SVC",
+    "icon": "svc.png"
+  },
+  {
+    "module": "diagrams.k8s.network",
+    "node": "Service",
+    "icon": "svc.png"
+  },
+  {
+    "module": "diagrams.k8s.others",
+    "node": "CRD",
+    "icon": "crd.png"
+  },
+  {
+    "module": "diagrams.k8s.others",
+    "node": "PSP",
+    "icon": "psp.png"
+  },
+  {
+    "module": "diagrams.k8s.podconfig",
+    "node": "CM",
+    "icon": "cm.png"
+  },
+  {
+    "module": "diagrams.k8s.podconfig",
+    "node": "ConfigMap",
+    "icon": "cm.png"
+  },
+  {
+    "module": "diagrams.k8s.podconfig",
+    "node": "Secret",
+    "icon": "secret.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "CRB",
+    "icon": "crb.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "CRole",
+    "icon": "c-role.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "ClusterRole",
+    "icon": "c-role.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "ClusterRoleBinding",
+    "icon": "crb.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "Group",
+    "icon": "group.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "RB",
+    "icon": "rb.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "Role",
+    "icon": "role.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "RoleBinding",
+    "icon": "rb.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "SA",
+    "icon": "sa.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "ServiceAccount",
+    "icon": "sa.png"
+  },
+  {
+    "module": "diagrams.k8s.rbac",
+    "node": "User",
+    "icon": "user.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "PV",
+    "icon": "pv.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "PVC",
+    "icon": "pvc.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "PersistentVolume",
+    "icon": "pv.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "PersistentVolumeClaim",
+    "icon": "pvc.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "SC",
+    "icon": "sc.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "StorageClass",
+    "icon": "sc.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "Vol",
+    "icon": "vol.png"
+  },
+  {
+    "module": "diagrams.k8s.storage",
+    "node": "Volume",
+    "icon": "vol.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "AnalysisServices",
+    "icon": "analysis-services.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "DataExplorerClusters",
+    "icon": "data-explorer-clusters.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "DataFactories",
+    "icon": "data-factories.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "DataLakeAnalytics",
+    "icon": "data-lake-analytics.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "DataLakeStoreGen1",
+    "icon": "data-lake-store-gen1.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "Databricks",
+    "icon": "databricks.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "EventHubClusters",
+    "icon": "event-hub-clusters.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "EventHubs",
+    "icon": "event-hubs.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "Hdinsightclusters",
+    "icon": "hdinsightclusters.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "LogAnalyticsWorkspaces",
+    "icon": "log-analytics-workspaces.png"
+  },
+  {
+    "module": "diagrams.azure.analytics",
+    "node": "StreamAnalyticsJobs",
+    "icon": "stream-analytics-jobs.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "ACR",
+    "icon": "container-registries.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "AKS",
+    "icon": "kubernetes-services.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "AvailabilitySets",
+    "icon": "availability-sets.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "BatchAccounts",
+    "icon": "batch-accounts.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "CitrixVirtualDesktopsEssentials",
+    "icon": "citrix-virtual-desktops-essentials.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "CloudServices",
+    "icon": "cloud-services.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "CloudServicesClassic",
+    "icon": "cloud-services-classic.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "CloudsimpleVirtualMachines",
+    "icon": "cloudsimple-virtual-machines.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "ContainerInstances",
+    "icon": "container-instances.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "ContainerRegistries",
+    "icon": "container-registries.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "DiskSnapshots",
+    "icon": "disk-snapshots.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "Disks",
+    "icon": "disks.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "FunctionApps",
+    "icon": "function-apps.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "KubernetesServices",
+    "icon": "kubernetes-services.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "MeshApplications",
+    "icon": "mesh-applications.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "SAPHANAOnAzure",
+    "icon": "sap-hana-on-azure.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "ServiceFabricClusters",
+    "icon": "service-fabric-clusters.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "VM",
+    "icon": "vm.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "VMClassic",
+    "icon": "vm-classic.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "VMImages",
+    "icon": "vm-images.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "VMLinux",
+    "icon": "vm-linux.png"
+  },
+  {
+    "module": "diagrams.azure.compute",
+    "node": "VMWindows",
+    "icon": "vm-windows.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "BlobStorage",
+    "icon": "blob-storage.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "CacheForRedis",
+    "icon": "cache-for-redis.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "CosmosDb",
+    "icon": "cosmos-db.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "DataLake",
+    "icon": "data-lake.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "DatabaseForMariadbServers",
+    "icon": "database-for-mariadb-servers.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "DatabaseForMysqlServers",
+    "icon": "database-for-mysql-servers.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "DatabaseForPostgresqlServers",
+    "icon": "database-for-postgresql-servers.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "ElasticDatabasePools",
+    "icon": "elastic-database-pools.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "ElasticJobAgents",
+    "icon": "elastic-job-agents.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "ManagedDatabases",
+    "icon": "managed-databases.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "SQLDatabases",
+    "icon": "sql-databases.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "SQLDatawarehouse",
+    "icon": "sql-datawarehouse.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "SQLManagedInstances",
+    "icon": "sql-managed-instances.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "SQLServerStretchDatabases",
+    "icon": "sql-server-stretch-databases.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "SQLServers",
+    "icon": "sql-servers.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "VirtualClusters",
+    "icon": "virtual-clusters.png"
+  },
+  {
+    "module": "diagrams.azure.database",
+    "node": "VirtualDatacenter",
+    "icon": "virtual-datacenter.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "ApplicationInsights",
+    "icon": "application-insights.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "Artifacts",
+    "icon": "artifacts.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "Boards",
+    "icon": "boards.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "Devops",
+    "icon": "devops.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "DevtestLabs",
+    "icon": "devtest-labs.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "Pipelines",
+    "icon": "pipelines.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "Repos",
+    "icon": "repos.png"
+  },
+  {
+    "module": "diagrams.azure.devops",
+    "node": "TestPlans",
+    "icon": "test-plans.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Allresources",
+    "icon": "allresources.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Azurehome",
+    "icon": "azurehome.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Developertools",
+    "icon": "developertools.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Helpsupport",
+    "icon": "helpsupport.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Information",
+    "icon": "information.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Managementgroups",
+    "icon": "managementgroups.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Marketplace",
+    "icon": "marketplace.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Quickstartcenter",
+    "icon": "quickstartcenter.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Recent",
+    "icon": "recent.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Reservations",
+    "icon": "reservations.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Resource",
+    "icon": "resource.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Resourcegroups",
+    "icon": "resourcegroups.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Servicehealth",
+    "icon": "servicehealth.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Shareddashboard",
+    "icon": "shareddashboard.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Subscriptions",
+    "icon": "subscriptions.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Support",
+    "icon": "support.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Supportrequests",
+    "icon": "supportrequests.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Tag",
+    "icon": "tag.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Tags",
+    "icon": "tags.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Templates",
+    "icon": "templates.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Twousericon",
+    "icon": "twousericon.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Userhealthicon",
+    "icon": "userhealthicon.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Usericon",
+    "icon": "usericon.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Userprivacy",
+    "icon": "userprivacy.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Userresource",
+    "icon": "userresource.png"
+  },
+  {
+    "module": "diagrams.azure.general",
+    "node": "Whatsnew",
+    "icon": "whatsnew.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ADB2C",
+    "icon": "ad-b2c.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ADDomainServices",
+    "icon": "ad-domain-services.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ADIdentityProtection",
+    "icon": "ad-identity-protection.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ADPrivilegedIdentityManagement",
+    "icon": "ad-privileged-identity-management.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "AccessReview",
+    "icon": "access-review.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ActiveDirectory",
+    "icon": "active-directory.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ActiveDirectoryConnectHealth",
+    "icon": "active-directory-connect-health.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "AppRegistrations",
+    "icon": "app-registrations.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ConditionalAccess",
+    "icon": "conditional-access.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "EnterpriseApplications",
+    "icon": "enterprise-applications.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "IdentityGovernance",
+    "icon": "identity-governance.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "InformationProtection",
+    "icon": "information-protection.png"
+  },
+  {
+    "module": "diagrams.azure.identity",
+    "node": "ManagedIdentities",
+    "icon": "managed-identities.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "APIForFhir",
+    "icon": "api-for-fhir.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "APIManagement",
+    "icon": "api-management.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "AppConfiguration",
+    "icon": "app-configuration.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "DataCatalog",
+    "icon": "data-catalog.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "EventGridDomains",
+    "icon": "event-grid-domains.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "EventGridSubscriptions",
+    "icon": "event-grid-subscriptions.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "EventGridTopics",
+    "icon": "event-grid-topics.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "IntegrationAccounts",
+    "icon": "integration-accounts.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "IntegrationServiceEnvironments",
+    "icon": "integration-service-environments.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "LogicApps",
+    "icon": "logic-apps.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "LogicAppsCustomConnector",
+    "icon": "logic-apps-custom-connector.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "SendgridAccounts",
+    "icon": "sendgrid-accounts.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "ServiceBus",
+    "icon": "service-bus.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "ServiceBusRelays",
+    "icon": "service-bus-relays.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "ServiceCatalogManagedApplicationDefinitions",
+    "icon": "service-catalog-managed-application-definitions.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "SoftwareAsAService",
+    "icon": "software-as-a-service.png"
+  },
+  {
+    "module": "diagrams.azure.integration",
+    "node": "StorsimpleDeviceManagers",
+    "icon": "storsimple-device-managers.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "DeviceProvisioningServices",
+    "icon": "device-provisioning-services.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "DigitalTwins",
+    "icon": "digital-twins.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "IotCentralApplications",
+    "icon": "iot-central-applications.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "IotHub",
+    "icon": "iot-hub.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "IotHubSecurity",
+    "icon": "iot-hub-security.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "Maps",
+    "icon": "maps.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "Sphere",
+    "icon": "sphere.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "TimeSeriesInsightsEnvironments",
+    "icon": "time-series-insights-environments.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "TimeSeriesInsightsEventsSources",
+    "icon": "time-series-insights-events-sources.png"
+  },
+  {
+    "module": "diagrams.azure.iot",
+    "node": "Windows10IotCoreServices",
+    "icon": "windows-10-iot-core-services.png"
+  },
+  {
+    "module": "diagrams.azure.migration",
+    "node": "DatabaseMigrationServices",
+    "icon": "database-migration-services.png"
+  },
+  {
+    "module": "diagrams.azure.migration",
+    "node": "MigrationProjects",
+    "icon": "migration-projects.png"
+  },
+  {
+    "module": "diagrams.azure.migration",
+    "node": "RecoveryServicesVaults",
+    "icon": "recovery-services-vaults.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "BatchAI",
+    "icon": "batch-ai.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "BotServices",
+    "icon": "bot-services.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "CognitiveServices",
+    "icon": "cognitive-services.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "GenomicsAccounts",
+    "icon": "genomics-accounts.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "MachineLearningServiceWorkspaces",
+    "icon": "machine-learning-service-workspaces.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "MachineLearningStudioWebServicePlans",
+    "icon": "machine-learning-studio-web-service-plans.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "MachineLearningStudioWebServices",
+    "icon": "machine-learning-studio-web-services.png"
+  },
+  {
+    "module": "diagrams.azure.ml",
+    "node": "MachineLearningStudioWorkspaces",
+    "icon": "machine-learning-studio-workspaces.png"
+  },
+  {
+    "module": "diagrams.azure.mobile",
+    "node": "AppServiceMobile",
+    "icon": "app-service---mobile.png"
+  },
+  {
+    "module": "diagrams.azure.mobile",
+    "node": "MobileEngagement",
+    "icon": "mobile-engagement.png"
+  },
+  {
+    "module": "diagrams.azure.mobile",
+    "node": "NotificationHubs",
+    "icon": "notification-hubs.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "ApplicationGateway",
+    "icon": "application-gateway.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "ApplicationSecurityGroups",
+    "icon": "application-security-groups.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "CDNProfiles",
+    "icon": "cdn-profiles.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "Connections",
+    "icon": "connections.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "DDOSProtectionPlans",
+    "icon": "ddos-protection-plans.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "DNSPrivateZones",
+    "icon": "dns-private-zones.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "DNSZones",
+    "icon": "dns-zones.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "ExpressrouteCircuits",
+    "icon": "expressroute-circuits.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "Firewall",
+    "icon": "firewall.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "FrontDoors",
+    "icon": "front-doors.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "LoadBalancers",
+    "icon": "load-balancers.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "LocalNetworkGateways",
+    "icon": "local-network-gateways.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "NetworkInterfaces",
+    "icon": "network-interfaces.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "NetworkSecurityGroupsClassic",
+    "icon": "network-security-groups-classic.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "NetworkWatcher",
+    "icon": "network-watcher.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "OnPremisesDataGateways",
+    "icon": "on-premises-data-gateways.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "PublicIpAddresses",
+    "icon": "public-ip-addresses.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "ReservedIpAddressesClassic",
+    "icon": "reserved-ip-addresses-classic.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "RouteFilters",
+    "icon": "route-filters.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "RouteTables",
+    "icon": "route-tables.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "ServiceEndpointPolicies",
+    "icon": "service-endpoint-policies.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "Subnets",
+    "icon": "subnets.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "TrafficManagerProfiles",
+    "icon": "traffic-manager-profiles.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "VirtualNetworkClassic",
+    "icon": "virtual-network-classic.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "VirtualNetworkGateways",
+    "icon": "virtual-network-gateways.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "VirtualNetworks",
+    "icon": "virtual-networks.png"
+  },
+  {
+    "module": "diagrams.azure.network",
+    "node": "VirtualWans",
+    "icon": "virtual-wans.png"
+  },
+  {
+    "module": "diagrams.azure.security",
+    "node": "KeyVaults",
+    "icon": "key-vaults.png"
+  },
+  {
+    "module": "diagrams.azure.security",
+    "node": "SecurityCenter",
+    "icon": "security-center.png"
+  },
+  {
+    "module": "diagrams.azure.security",
+    "node": "Sentinel",
+    "icon": "sentinel.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "ArchiveStorage",
+    "icon": "archive-storage.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "Azurefxtedgefiler",
+    "icon": "azurefxtedgefiler.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "BlobStorage",
+    "icon": "blob-storage.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "DataBox",
+    "icon": "data-box.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "DataBoxEdgeDataBoxGateway",
+    "icon": "data-box-edge---data-box-gateway.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "DataLakeStorage",
+    "icon": "data-lake-storage.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "GeneralStorage",
+    "icon": "general-storage.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "NetappFiles",
+    "icon": "netapp-files.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "QueuesStorage",
+    "icon": "queues-storage.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorageAccounts",
+    "icon": "storage-accounts.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorageAccountsClassic",
+    "icon": "storage-accounts-classic.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorageExplorer",
+    "icon": "storage-explorer.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorageSyncServices",
+    "icon": "storage-sync-services.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorsimpleDataManagers",
+    "icon": "storsimple-data-managers.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "StorsimpleDeviceManagers",
+    "icon": "storsimple-device-managers.png"
+  },
+  {
+    "module": "diagrams.azure.storage",
+    "node": "TableStorage",
+    "icon": "table-storage.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "APIConnections",
+    "icon": "api-connections.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "AppServiceCertificates",
+    "icon": "app-service-certificates.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "AppServiceDomains",
+    "icon": "app-service-domains.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "AppServiceEnvironments",
+    "icon": "app-service-environments.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "AppServicePlans",
+    "icon": "app-service-plans.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "AppServices",
+    "icon": "app-services.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "MediaServices",
+    "icon": "media-services.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "NotificationHubNamespaces",
+    "icon": "notification-hub-namespaces.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "Search",
+    "icon": "search.png"
+  },
+  {
+    "module": "diagrams.azure.web",
+    "node": "Signalr",
+    "icon": "signalr.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Analytics",
+    "icon": "analytics.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Athena",
+    "icon": "athena.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Cloudsearch",
+    "icon": "cloudsearch.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "CloudsearchSearchDocuments",
+    "icon": "cloudsearch-search-documents.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "DataPipeline",
+    "icon": "data-pipeline.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "EMR",
+    "icon": "emr.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "EMRCluster",
+    "icon": "emr-cluster.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "EMRHdfsCluster",
+    "icon": "emr-hdfs-cluster.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "ES",
+    "icon": "elasticsearch-service.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "ElasticsearchService",
+    "icon": "elasticsearch-service.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Glue",
+    "icon": "glue.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "GlueCrawlers",
+    "icon": "glue-crawlers.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "GlueDataCatalog",
+    "icon": "glue-data-catalog.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Kinesis",
+    "icon": "kinesis.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "KinesisDataAnalytics",
+    "icon": "kinesis-data-analytics.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "KinesisDataFirehose",
+    "icon": "kinesis-data-firehose.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "KinesisDataStreams",
+    "icon": "kinesis-data-streams.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "KinesisVideoStreams",
+    "icon": "kinesis-video-streams.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "LakeFormation",
+    "icon": "lake-formation.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "ManagedStreamingForKafka",
+    "icon": "managed-streaming-for-kafka.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Quicksight",
+    "icon": "quicksight.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "Redshift",
+    "icon": "redshift.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "RedshiftDenseComputeNode",
+    "icon": "redshift-dense-compute-node.png"
+  },
+  {
+    "module": "diagrams.aws.analytics",
+    "node": "RedshiftDenseStorageNode",
+    "icon": "redshift-dense-storage-node.png"
+  },
+  {
+    "module": "diagrams.aws.ar",
+    "node": "Sumerian",
+    "icon": "sumerian.png"
+  },
+  {
+    "module": "diagrams.aws.blockchain",
+    "node": "ManagedBlockchain",
+    "icon": "managed-blockchain.png"
+  },
+  {
+    "module": "diagrams.aws.blockchain",
+    "node": "QLDB",
+    "icon": "quantum-ledger-database-qldb.png"
+  },
+  {
+    "module": "diagrams.aws.blockchain",
+    "node": "QuantumLedgerDatabaseQldb",
+    "icon": "quantum-ledger-database-qldb.png"
+  },
+  {
+    "module": "diagrams.aws.business",
+    "node": "A4B",
+    "icon": "alexa-for-business.png"
+  },
+  {
+    "module": "diagrams.aws.business",
+    "node": "AlexaForBusiness",
+    "icon": "alexa-for-business.png"
+  },
+  {
+    "module": "diagrams.aws.business",
+    "node": "Chime",
+    "icon": "chime.png"
+  },
+  {
+    "module": "diagrams.aws.business",
+    "node": "Workmail",
+    "icon": "workmail.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ApplicationAutoScaling",
+    "icon": "application-auto-scaling.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "AutoScaling",
+    "icon": "application-auto-scaling.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Batch",
+    "icon": "batch.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Compute",
+    "icon": "compute.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "EB",
+    "icon": "elastic-beanstalk.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "EC2",
+    "icon": "ec2.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "EC2ContainerRegistry",
+    "icon": "ec2-container-registry.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ECR",
+    "icon": "ec2-container-registry.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ECS",
+    "icon": "elastic-container-service.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "EKS",
+    "icon": "elastic-kubernetes-service.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ElasticBeanstalk",
+    "icon": "elastic-beanstalk.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ElasticContainerService",
+    "icon": "elastic-container-service.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ElasticKubernetesService",
+    "icon": "elastic-kubernetes-service.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Fargate",
+    "icon": "fargate.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Lambda",
+    "icon": "lambda.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Lightsail",
+    "icon": "lightsail.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "Outposts",
+    "icon": "outposts.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "SAR",
+    "icon": "serverless-application-repository.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ServerlessApplicationRepository",
+    "icon": "serverless-application-repository.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxDeadline",
+    "icon": "thinkbox-deadline.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxDraft",
+    "icon": "thinkbox-draft.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxFrost",
+    "icon": "thinkbox-frost.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxKrakatoa",
+    "icon": "thinkbox-krakatoa.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxSequoia",
+    "icon": "thinkbox-sequoia.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxStoke",
+    "icon": "thinkbox-stoke.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "ThinkboxXmesh",
+    "icon": "thinkbox-xmesh.png"
+  },
+  {
+    "module": "diagrams.aws.compute",
+    "node": "VmwareCloudOnAWS",
+    "icon": "vmware-cloud-on-aws.png"
+  },
+  {
+    "module": "diagrams.aws.cost",
+    "node": "Budgets",
+    "icon": "budgets.png"
+  },
+  {
+    "module": "diagrams.aws.cost",
+    "node": "CostAndUsageReport",
+    "icon": "cost-and-usage-report.png"
+  },
+  {
+    "module": "diagrams.aws.cost",
+    "node": "CostExplorer",
+    "icon": "cost-explorer.png"
+  },
+  {
+    "module": "diagrams.aws.cost",
+    "node": "ReservedInstanceReporting",
+    "icon": "reserved-instance-reporting.png"
+  },
+  {
+    "module": "diagrams.aws.cost",
+    "node": "SavingsPlans",
+    "icon": "savings-plans.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Aurora",
+    "icon": "aurora.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DAX",
+    "icon": "dynamodb-dax.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DB",
+    "icon": "database.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DDB",
+    "icon": "dynamodb.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DMS",
+    "icon": "database-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Database",
+    "icon": "database.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DatabaseMigrationService",
+    "icon": "database-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DocumentDB",
+    "icon": "documentdb-mongodb-compatibility.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DocumentdbMongodbCompatibility",
+    "icon": "documentdb-mongodb-compatibility.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Dynamodb",
+    "icon": "dynamodb.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DynamodbDax",
+    "icon": "dynamodb-dax.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DynamodbGSI",
+    "icon": "dynamodb-global-secondary-index.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DynamodbGlobalSecondaryIndex",
+    "icon": "dynamodb-global-secondary-index.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "DynamodbTable",
+    "icon": "dynamodb-table.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "ElastiCache",
+    "icon": "elasticache.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Elasticache",
+    "icon": "elasticache.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Neptune",
+    "icon": "neptune.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "QLDB",
+    "icon": "quantum-ledger-database-qldb.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "QuantumLedgerDatabaseQldb",
+    "icon": "quantum-ledger-database-qldb.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "RDS",
+    "icon": "rds.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "RDSOnVmware",
+    "icon": "rds-on-vmware.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Redshift",
+    "icon": "redshift.png"
+  },
+  {
+    "module": "diagrams.aws.database",
+    "node": "Timestream",
+    "icon": "timestream.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "CLI",
+    "icon": "command-line-interface.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Cloud9",
+    "icon": "cloud9.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "CloudDevelopmentKit",
+    "icon": "cloud-development-kit.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Codebuild",
+    "icon": "codebuild.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Codecommit",
+    "icon": "codecommit.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Codedeploy",
+    "icon": "codedeploy.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Codepipeline",
+    "icon": "codepipeline.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "Codestar",
+    "icon": "codestar.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "CommandLineInterface",
+    "icon": "command-line-interface.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "DevTools",
+    "icon": "developer-tools.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "DeveloperTools",
+    "icon": "developer-tools.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "ToolsAndSdks",
+    "icon": "tools-and-sdks.png"
+  },
+  {
+    "module": "diagrams.aws.devtools",
+    "node": "XRay",
+    "icon": "x-ray.png"
+  },
+  {
+    "module": "diagrams.aws.enablement",
+    "node": "Iq",
+    "icon": "iq.png"
+  },
+  {
+    "module": "diagrams.aws.enablement",
+    "node": "ManagedServices",
+    "icon": "managed-services.png"
+  },
+  {
+    "module": "diagrams.aws.enablement",
+    "node": "ProfessionalServices",
+    "icon": "professional-services.png"
+  },
+  {
+    "module": "diagrams.aws.enablement",
+    "node": "Support",
+    "icon": "support.png"
+  },
+  {
+    "module": "diagrams.aws.enduser",
+    "node": "Appstream20",
+    "icon": "appstream-2-0.png"
+  },
+  {
+    "module": "diagrams.aws.enduser",
+    "node": "Workdocs",
+    "icon": "workdocs.png"
+  },
+  {
+    "module": "diagrams.aws.enduser",
+    "node": "Worklink",
+    "icon": "worklink.png"
+  },
+  {
+    "module": "diagrams.aws.enduser",
+    "node": "Workspaces",
+    "icon": "workspaces.png"
+  },
+  {
+    "module": "diagrams.aws.engagement",
+    "node": "Connect",
+    "icon": "connect.png"
+  },
+  {
+    "module": "diagrams.aws.engagement",
+    "node": "Pinpoint",
+    "icon": "pinpoint.png"
+  },
+  {
+    "module": "diagrams.aws.engagement",
+    "node": "SES",
+    "icon": "simple-email-service-ses.png"
+  },
+  {
+    "module": "diagrams.aws.engagement",
+    "node": "SimpleEmailServiceSes",
+    "icon": "simple-email-service-ses.png"
+  },
+  {
+    "module": "diagrams.aws.game",
+    "node": "Gamelift",
+    "icon": "gamelift.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "Disk",
+    "icon": "disk.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "General",
+    "icon": "general.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "GenericDatabase",
+    "icon": "generic-database.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "GenericFirewall",
+    "icon": "generic-firewall.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "GenericOfficeBuilding",
+    "icon": "generic-office-building.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "GenericSDK",
+    "icon": "generic-sdk.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "GenericSamlToken",
+    "icon": "generic-saml-token.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "Marketplace",
+    "icon": "marketplace.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "OfficeBuilding",
+    "icon": "generic-office-building.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "TraditionalServer",
+    "icon": "traditional-server.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "User",
+    "icon": "user.png"
+  },
+  {
+    "module": "diagrams.aws.general",
+    "node": "Users",
+    "icon": "users.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "ApplicationIntegration",
+    "icon": "application-integration.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "Appsync",
+    "icon": "appsync.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "ConsoleMobileApplication",
+    "icon": "console-mobile-application.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "Eventbridge",
+    "icon": "eventbridge.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "MQ",
+    "icon": "mq.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "SF",
+    "icon": "step-functions.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "SNS",
+    "icon": "simple-notification-service-sns.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "SQS",
+    "icon": "simple-queue-service-sqs.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "SimpleNotificationServiceSns",
+    "icon": "simple-notification-service-sns.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "SimpleQueueServiceSqs",
+    "icon": "simple-queue-service-sqs.png"
+  },
+  {
+    "module": "diagrams.aws.integration",
+    "node": "StepFunctions",
+    "icon": "step-functions.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "FreeRTOS",
+    "icon": "freertos.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "Freertos",
+    "icon": "freertos.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "InternetOfThings",
+    "icon": "internet-of-things.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "Iot1Click",
+    "icon": "iot-1-click.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotAction",
+    "icon": "iot-action.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotAlexaEcho",
+    "icon": "iot-alexa-echo.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotAlexaSkill",
+    "icon": "iot-alexa-skill.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotAnalytics",
+    "icon": "iot-analytics.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotBoard",
+    "icon": "iot-hardware-board.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotButton",
+    "icon": "iot-button.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotCamera",
+    "icon": "iot-camera.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotCertificate",
+    "icon": "iot-certificate.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotCore",
+    "icon": "iot-core.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotDeviceDefender",
+    "icon": "iot-device-defender.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotDeviceManagement",
+    "icon": "iot-device-management.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotEvents",
+    "icon": "iot-events.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotGreengrass",
+    "icon": "iot-greengrass.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotGreengrassConnector",
+    "icon": "iot-greengrass-connector.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotHardwareBoard",
+    "icon": "iot-hardware-board.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotHttp",
+    "icon": "iot-http.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotHttp2",
+    "icon": "iot-http2.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotJobs",
+    "icon": "iot-jobs.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotLambda",
+    "icon": "iot-lambda.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotMqtt",
+    "icon": "iot-mqtt.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotPolicy",
+    "icon": "iot-policy.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotPolicyEmergency",
+    "icon": "iot-policy-emergency.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotRule",
+    "icon": "iot-rule.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotShadow",
+    "icon": "iot-shadow.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotSitewise",
+    "icon": "iot-sitewise.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotThingsGraph",
+    "icon": "iot-things-graph.png"
+  },
+  {
+    "module": "diagrams.aws.iot",
+    "node": "IotTopic",
+    "icon": "iot-topic.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "AutoScaling",
+    "icon": "auto-scaling.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Cloudformation",
+    "icon": "cloudformation.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Cloudtrail",
+    "icon": "cloudtrail.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Cloudwatch",
+    "icon": "cloudwatch.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Codeguru",
+    "icon": "codeguru.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "CommandLineInterface",
+    "icon": "command-line-interface.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Config",
+    "icon": "config.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "ControlTower",
+    "icon": "control-tower.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "LicenseManager",
+    "icon": "license-manager.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "ManagedServices",
+    "icon": "managed-services.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "ManagementConsole",
+    "icon": "management-console.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Opsworks",
+    "icon": "opsworks.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "Organizations",
+    "icon": "organizations.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "ParameterStore",
+    "icon": "systems-manager-parameter-store.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "SSM",
+    "icon": "systems-manager.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "ServiceCatalog",
+    "icon": "service-catalog.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "SystemsManager",
+    "icon": "systems-manager.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "SystemsManagerParameterStore",
+    "icon": "systems-manager-parameter-store.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "TrustedAdvisor",
+    "icon": "trusted-advisor.png"
+  },
+  {
+    "module": "diagrams.aws.management",
+    "node": "WellArchitectedTool",
+    "icon": "well-architected-tool.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElasticTranscoder",
+    "icon": "elastic-transcoder.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalConductor",
+    "icon": "elemental-conductor.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalDelta",
+    "icon": "elemental-delta.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalLive",
+    "icon": "elemental-live.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMediaconnect",
+    "icon": "elemental-mediaconnect.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMediaconvert",
+    "icon": "elemental-mediaconvert.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMedialive",
+    "icon": "elemental-medialive.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMediapackage",
+    "icon": "elemental-mediapackage.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMediastore",
+    "icon": "elemental-mediastore.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalMediatailor",
+    "icon": "elemental-mediatailor.png"
+  },
+  {
+    "module": "diagrams.aws.media",
+    "node": "ElementalServer",
+    "icon": "elemental-server.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "ADS",
+    "icon": "application-discovery-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "ApplicationDiscoveryService",
+    "icon": "application-discovery-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "CEM",
+    "icon": "cloudendure-migration.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "CloudendureMigration",
+    "icon": "cloudendure-migration.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "DMS",
+    "icon": "database-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "DatabaseMigrationService",
+    "icon": "database-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "Datasync",
+    "icon": "datasync.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "MAT",
+    "icon": "migration-and-transfer.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "MigrationAndTransfer",
+    "icon": "migration-and-transfer.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "MigrationHub",
+    "icon": "migration-hub.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "SMS",
+    "icon": "server-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "ServerMigrationService",
+    "icon": "server-migration-service.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "Snowball",
+    "icon": "snowball.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "SnowballEdge",
+    "icon": "snowball-edge.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "Snowmobile",
+    "icon": "snowmobile.png"
+  },
+  {
+    "module": "diagrams.aws.migration",
+    "node": "TransferForSftp",
+    "icon": "transfer-for-sftp.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "ApacheMxnetOnAWS",
+    "icon": "apache-mxnet-on-aws.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Comprehend",
+    "icon": "comprehend.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "DLC",
+    "icon": "deep-learning-containers.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "DeepLearningAmis",
+    "icon": "deep-learning-amis.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "DeepLearningContainers",
+    "icon": "deep-learning-containers.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Deeplens",
+    "icon": "deeplens.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Deepracer",
+    "icon": "deepracer.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "ElasticInference",
+    "icon": "elastic-inference.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Forecast",
+    "icon": "forecast.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Lex",
+    "icon": "lex.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "MachineLearning",
+    "icon": "machine-learning.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Personalize",
+    "icon": "personalize.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Polly",
+    "icon": "polly.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Rekognition",
+    "icon": "rekognition.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Sagemaker",
+    "icon": "sagemaker.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "SagemakerGroundTruth",
+    "icon": "sagemaker-ground-truth.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "SagemakerModel",
+    "icon": "sagemaker-model.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "SagemakerNotebook",
+    "icon": "sagemaker-notebook.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "SagemakerTrainingJob",
+    "icon": "sagemaker-training-job.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "TensorflowOnAWS",
+    "icon": "tensorflow-on-aws.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Textract",
+    "icon": "textract.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Transcribe",
+    "icon": "transcribe.png"
+  },
+  {
+    "module": "diagrams.aws.ml",
+    "node": "Translate",
+    "icon": "translate.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "APIGateway",
+    "icon": "api-gateway.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "APIGatewayEndpoint",
+    "icon": "api-gateway-endpoint.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "Amplify",
+    "icon": "amplify.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "Appsync",
+    "icon": "appsync.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "DeviceFarm",
+    "icon": "device-farm.png"
+  },
+  {
+    "module": "diagrams.aws.mobile",
+    "node": "Pinpoint",
+    "icon": "pinpoint.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "APIGateway",
+    "icon": "api-gateway.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "AppMesh",
+    "icon": "app-mesh.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "CF",
+    "icon": "cloudfront.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "ClientVpn",
+    "icon": "client-vpn.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "CloudFront",
+    "icon": "cloudfront.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "CloudMap",
+    "icon": "cloud-map.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "DirectConnect",
+    "icon": "direct-connect.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "ELB",
+    "icon": "elastic-load-balancing.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "ElasticLoadBalancing",
+    "icon": "elastic-load-balancing.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "Endpoint",
+    "icon": "endpoint.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "GAX",
+    "icon": "global-accelerator.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "GlobalAccelerator",
+    "icon": "global-accelerator.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "InternetGateway",
+    "icon": "internet-gateway.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "NATGateway",
+    "icon": "nat-gateway.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "Nacl",
+    "icon": "nacl.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "NetworkingAndContentDelivery",
+    "icon": "networking-and-content-delivery.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "PrivateSubnet",
+    "icon": "private-subnet.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "Privatelink",
+    "icon": "privatelink.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "PublicSubnet",
+    "icon": "public-subnet.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "Route53",
+    "icon": "route-53.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "RouteTable",
+    "icon": "route-table.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "SiteToSiteVpn",
+    "icon": "site-to-site-vpn.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "TransitGateway",
+    "icon": "transit-gateway.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "VPC",
+    "icon": "vpc.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "VPCPeering",
+    "icon": "vpc-peering.png"
+  },
+  {
+    "module": "diagrams.aws.network",
+    "node": "VPCRouter",
+    "icon": "vpc-router.png"
+  },
+  {
+    "module": "diagrams.aws.quantum",
+    "node": "Braket",
+    "icon": "braket.png"
+  },
+  {
+    "module": "diagrams.aws.robotics",
+    "node": "Robomaker",
+    "icon": "robomaker.png"
+  },
+  {
+    "module": "diagrams.aws.robotics",
+    "node": "RobomakerSimulator",
+    "icon": "robomaker-simulator.png"
+  },
+  {
+    "module": "diagrams.aws.robotics",
+    "node": "Robotics",
+    "icon": "robotics.png"
+  },
+  {
+    "module": "diagrams.aws.satellite",
+    "node": "GroundStation",
+    "icon": "ground-station.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "ACM",
+    "icon": "certificate-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Artifact",
+    "icon": "artifact.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "CertificateManager",
+    "icon": "certificate-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "CloudDirectory",
+    "icon": "cloud-directory.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "CloudHSM",
+    "icon": "cloudhsm.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Cloudhsm",
+    "icon": "cloudhsm.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Cognito",
+    "icon": "cognito.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "DS",
+    "icon": "directory-service.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Detective",
+    "icon": "detective.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "DirectoryService",
+    "icon": "directory-service.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "FMS",
+    "icon": "firewall-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "FirewallManager",
+    "icon": "firewall-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Guardduty",
+    "icon": "guardduty.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IAM",
+    "icon": "identity-and-access-management-iam.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IAMAWSSts",
+    "icon": "identity-and-access-management-iam-aws-sts.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IAMAccessAnalyzer",
+    "icon": "identity-and-access-management-iam-access-analyzer.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IAMPermissions",
+    "icon": "identity-and-access-management-iam-permissions.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IAMRole",
+    "icon": "identity-and-access-management-iam-role.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IdentityAndAccessManagementIam",
+    "icon": "identity-and-access-management-iam.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IdentityAndAccessManagementIamAWSSts",
+    "icon": "identity-and-access-management-iam-aws-sts.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IdentityAndAccessManagementIamAccessAnalyzer",
+    "icon": "identity-and-access-management-iam-access-analyzer.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IdentityAndAccessManagementIamPermissions",
+    "icon": "identity-and-access-management-iam-permissions.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "IdentityAndAccessManagementIamRole",
+    "icon": "identity-and-access-management-iam-role.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Inspector",
+    "icon": "inspector.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "KMS",
+    "icon": "key-management-service.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "KeyManagementService",
+    "icon": "key-management-service.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Macie",
+    "icon": "macie.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "RAM",
+    "icon": "resource-access-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "ResourceAccessManager",
+    "icon": "resource-access-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "SecretsManager",
+    "icon": "secrets-manager.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "SecurityHub",
+    "icon": "security-hub.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "SecurityIdentityAndCompliance",
+    "icon": "security-identity-and-compliance.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "Shield",
+    "icon": "shield.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "SingleSignOn",
+    "icon": "single-sign-on.png"
+  },
+  {
+    "module": "diagrams.aws.security",
+    "node": "WAF",
+    "icon": "waf.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "Backup",
+    "icon": "backup.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "CDR",
+    "icon": "cloudendure-disaster-recovery.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "CloudendureDisasterRecovery",
+    "icon": "cloudendure-disaster-recovery.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "EBS",
+    "icon": "elastic-block-store-ebs.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "EFS",
+    "icon": "elastic-file-system-efs.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "EFSInfrequentaccessPrimaryBg",
+    "icon": "efs-infrequentaccess-primary-bg.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "EFSStandardPrimaryBg",
+    "icon": "efs-standard-primary-bg.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "ElasticBlockStoreEBS",
+    "icon": "elastic-block-store-ebs.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "ElasticFileSystemEFS",
+    "icon": "elastic-file-system-efs.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "FSx",
+    "icon": "fsx.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "Fsx",
+    "icon": "fsx.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "FsxForLustre",
+    "icon": "fsx-for-lustre.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "FsxForWindowsFileServer",
+    "icon": "fsx-for-windows-file-server.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "S3",
+    "icon": "simple-storage-service-s3.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "S3Glacier",
+    "icon": "s3-glacier.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "SimpleStorageServiceS3",
+    "icon": "simple-storage-service-s3.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "Snowball",
+    "icon": "snowball.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "SnowballEdge",
+    "icon": "snowball-edge.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "Snowmobile",
+    "icon": "snowmobile.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "Storage",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.aws.storage",
+    "node": "StorageGateway",
+    "icon": "storage-gateway.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "BigQuery",
+    "icon": "bigquery.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Bigquery",
+    "icon": "bigquery.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Composer",
+    "icon": "composer.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "DataCatalog",
+    "icon": "data-catalog.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "DataFusion",
+    "icon": "data-fusion.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Dataflow",
+    "icon": "dataflow.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Datalab",
+    "icon": "datalab.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Dataprep",
+    "icon": "dataprep.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Dataproc",
+    "icon": "dataproc.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Genomics",
+    "icon": "genomics.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "PubSub",
+    "icon": "pubsub.png"
+  },
+  {
+    "module": "diagrams.gcp.analytics",
+    "node": "Pubsub",
+    "icon": "pubsub.png"
+  },
+  {
+    "module": "diagrams.gcp.api",
+    "node": "Endpoints",
+    "icon": "endpoints.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "AppEngine",
+    "icon": "app-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "ComputeEngine",
+    "icon": "compute-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "ContainerOptimizedOS",
+    "icon": "container-optimized-os.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "Functions",
+    "icon": "functions.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GAE",
+    "icon": "app-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GCE",
+    "icon": "compute-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GCF",
+    "icon": "functions.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GKE",
+    "icon": "kubernetes-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GKEOnPrem",
+    "icon": "gke-on-prem.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "GPU",
+    "icon": "gpu.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "KubernetesEngine",
+    "icon": "kubernetes-engine.png"
+  },
+  {
+    "module": "diagrams.gcp.compute",
+    "node": "Run",
+    "icon": "run.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "BigTable",
+    "icon": "bigtable.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "Bigtable",
+    "icon": "bigtable.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "Datastore",
+    "icon": "datastore.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "Firestore",
+    "icon": "firestore.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "Memorystore",
+    "icon": "memorystore.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "SQL",
+    "icon": "sql.png"
+  },
+  {
+    "module": "diagrams.gcp.database",
+    "node": "Spanner",
+    "icon": "spanner.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "Build",
+    "icon": "build.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "Code",
+    "icon": "code.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "CodeForIntellij",
+    "icon": "code-for-intellij.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "ContainerRegistry",
+    "icon": "container-registry.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "GCR",
+    "icon": "container-registry.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "GradleAppEnginePlugin",
+    "icon": "gradle-app-engine-plugin.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "IdePlugins",
+    "icon": "ide-plugins.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "MavenAppEnginePlugin",
+    "icon": "maven-app-engine-plugin.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "SDK",
+    "icon": "sdk.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "Scheduler",
+    "icon": "scheduler.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "SourceRepositories",
+    "icon": "source-repositories.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "Tasks",
+    "icon": "tasks.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "TestLab",
+    "icon": "test-lab.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "ToolsForEclipse",
+    "icon": "tools-for-eclipse.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "ToolsForPowershell",
+    "icon": "tools-for-powershell.png"
+  },
+  {
+    "module": "diagrams.gcp.devtools",
+    "node": "ToolsForVisualStudio",
+    "icon": "tools-for-visual-studio.png"
+  },
+  {
+    "module": "diagrams.gcp.iot",
+    "node": "IotCore",
+    "icon": "iot-core.png"
+  },
+  {
+    "module": "diagrams.gcp.migration",
+    "node": "TransferAppliance",
+    "icon": "transfer-appliance.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AIHub",
+    "icon": "ai-hub.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AIPlatform",
+    "icon": "ai-platform.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AIPlatformDataLabelingService",
+    "icon": "ai-platform-data-labeling-service.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AdvancedSolutionsLab",
+    "icon": "advanced-solutions-lab.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutoML",
+    "icon": "automl.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "Automl",
+    "icon": "automl.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutomlNaturalLanguage",
+    "icon": "automl-natural-language.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutomlTables",
+    "icon": "automl-tables.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutomlTranslation",
+    "icon": "automl-translation.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutomlVideoIntelligence",
+    "icon": "automl-video-intelligence.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "AutomlVision",
+    "icon": "automl-vision.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "DialogFlowEnterpriseEdition",
+    "icon": "dialog-flow-enterprise-edition.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "InferenceAPI",
+    "icon": "inference-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "JobsAPI",
+    "icon": "jobs-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "NLAPI",
+    "icon": "natural-language-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "NaturalLanguageAPI",
+    "icon": "natural-language-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "RecommendationsAI",
+    "icon": "recommendations-ai.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "STT",
+    "icon": "speech-to-text.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "SpeechToText",
+    "icon": "speech-to-text.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "TPU",
+    "icon": "tpu.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "TTS",
+    "icon": "text-to-speech.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "TextToSpeech",
+    "icon": "text-to-speech.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "TranslationAPI",
+    "icon": "translation-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "VideoIntelligenceAPI",
+    "icon": "video-intelligence-api.png"
+  },
+  {
+    "module": "diagrams.gcp.ml",
+    "node": "VisionAPI",
+    "icon": "vision-api.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "Armor",
+    "icon": "armor.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "CDN",
+    "icon": "cdn.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "DNS",
+    "icon": "dns.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "DedicatedInterconnect",
+    "icon": "dedicated-interconnect.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "ExternalIpAddresses",
+    "icon": "external-ip-addresses.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "FirewallRules",
+    "icon": "firewall-rules.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "LoadBalancing",
+    "icon": "load-balancing.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "NAT",
+    "icon": "nat.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "Network",
+    "icon": "network.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "PartnerInterconnect",
+    "icon": "partner-interconnect.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "PremiumNetworkTier",
+    "icon": "premium-network-tier.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "Router",
+    "icon": "router.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "Routes",
+    "icon": "routes.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "StandardNetworkTier",
+    "icon": "standard-network-tier.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "TrafficDirector",
+    "icon": "traffic-director.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "VPC",
+    "icon": "virtual-private-cloud.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "VPN",
+    "icon": "vpn.png"
+  },
+  {
+    "module": "diagrams.gcp.network",
+    "node": "VirtualPrivateCloud",
+    "icon": "virtual-private-cloud.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "IAP",
+    "icon": "iap.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "Iam",
+    "icon": "iam.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "KMS",
+    "icon": "key-management-service.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "KeyManagementService",
+    "icon": "key-management-service.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "ResourceManager",
+    "icon": "resource-manager.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "SCC",
+    "icon": "security-command-center.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "SecurityCommandCenter",
+    "icon": "security-command-center.png"
+  },
+  {
+    "module": "diagrams.gcp.security",
+    "node": "SecurityScanner",
+    "icon": "security-scanner.png"
+  },
+  {
+    "module": "diagrams.gcp.storage",
+    "node": "Filestore",
+    "icon": "filestore.png"
+  },
+  {
+    "module": "diagrams.gcp.storage",
+    "node": "GCS",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.gcp.storage",
+    "node": "PersistentDisk",
+    "icon": "persistent-disk.png"
+  },
+  {
+    "module": "diagrams.gcp.storage",
+    "node": "Storage",
+    "icon": "storage.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "Autoscale",
+    "icon": "autoscale.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "AutoscaleWhite",
+    "icon": "autoscale-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "BM",
+    "icon": "bm.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "BMWhite",
+    "icon": "bm-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "BareMetal",
+    "icon": "bm.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "BareMetalWhite",
+    "icon": "bm-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "Container",
+    "icon": "container.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "ContainerEngine",
+    "icon": "oke.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "ContainerEngineWhite",
+    "icon": "oke-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "ContainerWhite",
+    "icon": "container-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "Functions",
+    "icon": "functions.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "FunctionsWhite",
+    "icon": "functions-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "InstancePools",
+    "icon": "instance-pools.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "InstancePoolsWhite",
+    "icon": "instance-pools-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OCIR",
+    "icon": "ocir.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OCIRWhite",
+    "icon": "ocir-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OCIRegistry",
+    "icon": "ocir.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OCIRegistryWhite",
+    "icon": "ocir-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OKE",
+    "icon": "oke.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "OKEWhite",
+    "icon": "oke-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "VM",
+    "icon": "vm.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "VMWhite",
+    "icon": "vm-white.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "VirtualMachine",
+    "icon": "vm.png"
+  },
+  {
+    "module": "diagrams.oci.compute",
+    "node": "VirtualMachineWhite",
+    "icon": "vm-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "Backbone",
+    "icon": "backbone.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "BackboneWhite",
+    "icon": "backbone-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CDN",
+    "icon": "cdn.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CDNWhite",
+    "icon": "cdn-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CustomerDatacenter",
+    "icon": "customer-datacenter.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CustomerDatacntrWhite",
+    "icon": "customer-datacntr-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CustomerPremise",
+    "icon": "customer-premise.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "CustomerPremiseWhite",
+    "icon": "customer-premise-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "DNS",
+    "icon": "dns.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "DNSWhite",
+    "icon": "dns-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "DisconnectedRegions",
+    "icon": "disconnected-regions.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "DisconnectedRegionsWhite",
+    "icon": "disconnected-regions-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "FastConnect",
+    "icon": "fast-connect.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "FastConnectWhite",
+    "icon": "fast-connect-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "NATGateway",
+    "icon": "nat-gateway.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "NATGatewayWhite",
+    "icon": "nat-gateway-white.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "VPN",
+    "icon": "vpn.png"
+  },
+  {
+    "module": "diagrams.oci.connectivity",
+    "node": "VPNWhite",
+    "icon": "vpn-white.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "APIGateway",
+    "icon": "api-gateway.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "APIGatewayWhite",
+    "icon": "api-gateway-white.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "APIService",
+    "icon": "api-service.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "APIServiceWhite",
+    "icon": "api-service-white.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "ResourceMgmt",
+    "icon": "resource-mgmt.png"
+  },
+  {
+    "module": "diagrams.oci.devops",
+    "node": "ResourceMgmtWhite",
+    "icon": "resource-mgmt-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Audit",
+    "icon": "audit.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "AuditWhite",
+    "icon": "audit-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Compartments",
+    "icon": "compartments.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "CompartmentsWhite",
+    "icon": "compartments-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Groups",
+    "icon": "groups.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "GroupsWhite",
+    "icon": "groups-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Logging",
+    "icon": "logging.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "LoggingWhite",
+    "icon": "logging-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "OCID",
+    "icon": "ocid.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "OCIDWhite",
+    "icon": "ocid-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Policies",
+    "icon": "policies.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "PoliciesWhite",
+    "icon": "policies-white.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "Tagging",
+    "icon": "tagging.png"
+  },
+  {
+    "module": "diagrams.oci.governance",
+    "node": "TaggingWhite",
+    "icon": "tagging-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Alarm",
+    "icon": "alarm.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "AlarmWhite",
+    "icon": "alarm-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Email",
+    "icon": "email.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "EmailWhite",
+    "icon": "email-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Events",
+    "icon": "events.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "EventsWhite",
+    "icon": "events-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "HealthCheck",
+    "icon": "health-check.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "HealthCheckWhite",
+    "icon": "health-check-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Notifications",
+    "icon": "notifications.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "NotificationsWhite",
+    "icon": "notifications-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Queue",
+    "icon": "queue.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "QueueWhite",
+    "icon": "queue-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Search",
+    "icon": "search.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "SearchWhite",
+    "icon": "search-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Telemetry",
+    "icon": "telemetry.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "TelemetryWhite",
+    "icon": "telemetry-white.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "Workflow",
+    "icon": "workflow.png"
+  },
+  {
+    "module": "diagrams.oci.monitoring",
+    "node": "WorkflowWhite",
+    "icon": "workflow-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "Drg",
+    "icon": "drg.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "DrgWhite",
+    "icon": "drg-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "Firewall",
+    "icon": "firewall.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "FirewallWhite",
+    "icon": "firewall-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "InternetGateway",
+    "icon": "internet-gateway.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "InternetGatewayWhite",
+    "icon": "internet-gateway-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "LoadBalancer",
+    "icon": "load-balancer.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "LoadBalancerWhite",
+    "icon": "load-balancer-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "RouteTable",
+    "icon": "route-table.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "RouteTableWhite",
+    "icon": "route-table-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "SecurityLists",
+    "icon": "security-lists.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "SecurityListsWhite",
+    "icon": "security-lists-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "ServiceGateway",
+    "icon": "service-gateway.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "ServiceGatewayWhite",
+    "icon": "service-gateway-white.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "Vcn",
+    "icon": "vcn.png"
+  },
+  {
+    "module": "diagrams.oci.network",
+    "node": "VcnWhite",
+    "icon": "vcn-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "CloudGuard",
+    "icon": "cloud-guard.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "CloudGuardWhite",
+    "icon": "cloud-guard-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "DDOS",
+    "icon": "ddos.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "DDOSWhite",
+    "icon": "ddos-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "Encryption",
+    "icon": "encryption.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "EncryptionWhite",
+    "icon": "encryption-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "IDAccess",
+    "icon": "id-access.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "IDAccessWhite",
+    "icon": "id-access-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "KeyManagement",
+    "icon": "key-management.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "KeyManagementWhite",
+    "icon": "key-management-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "MaxSecurityZone",
+    "icon": "max-security-zone.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "MaxSecurityZoneWhite",
+    "icon": "max-security-zone-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "Vault",
+    "icon": "vault.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "VaultWhite",
+    "icon": "vault-white.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "WAF",
+    "icon": "waf.png"
+  },
+  {
+    "module": "diagrams.oci.security",
+    "node": "WAFWhite",
+    "icon": "waf-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BackupRestore",
+    "icon": "backup-restore.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BackupRestoreWhite",
+    "icon": "backup-restore-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BlockStorage",
+    "icon": "block-storage.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BlockStorageClone",
+    "icon": "block-storage-clone.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BlockStorageCloneWhite",
+    "icon": "block-storage-clone-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BlockStorageWhite",
+    "icon": "block-storage-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "Buckets",
+    "icon": "buckets.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "BucketsWhite",
+    "icon": "buckets-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "DataTransfer",
+    "icon": "data-transfer.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "DataTransferWhite",
+    "icon": "data-transfer-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "ElasticPerformance",
+    "icon": "elastic-performance.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "ElasticPerformanceWhite",
+    "icon": "elastic-performance-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "FileStorage",
+    "icon": "file-storage.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "FileStorageWhite",
+    "icon": "file-storage-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "ObjectStorage",
+    "icon": "object-storage.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "ObjectStorageWhite",
+    "icon": "object-storage-white.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "StorageGateway",
+    "icon": "storage-gateway.png"
+  },
+  {
+    "module": "diagrams.oci.storage",
+    "node": "StorageGatewayWhite",
+    "icon": "storage-gateway-white.png"
+  }
+]
