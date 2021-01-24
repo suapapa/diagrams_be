@@ -1,24 +1,25 @@
-# diagrams-server
+# diagrams-back
 
 ## sandbox
 
 Build and push docker image:
 
     $ cd sandox
-    $ make push
+    $ make
 
-Run:
+Example Run:
 
     $ cat sample/k8s_diagram.py | docker run -i --rm suapapa/diagrams-server-gvisor 
 
-## backend
+## server
 
 Make diagrams node json file:
 
-    $ docker run -it --rm --entrypoint=/usr/local/bin/python suapapa/diagrams-server-gvisor:latest listup_nodes.py
+    $ cd server
+    $ make
 
-Run:
+Example Run:
 
-    $ cd backend
+    $ cd server
     $ go build && ./backend -l :8888
     $ cat ../sample/k8s_diagram.py | curl -X POST --data "$(</dev/stdin)" http://localhost:8888/diagram
