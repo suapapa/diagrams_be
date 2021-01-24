@@ -27,8 +27,6 @@ const (
 	runTimeout       = 5 * time.Second
 	maxOutputSize    = 100 << 20
 	memoryLimitBytes = 100 << 20
-
-	containerName = "suapapa/diagrams-server-gvisor"
 )
 
 var (

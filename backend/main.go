@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"net/http"
+	"os"
 	"os/exec"
 )
 
@@ -13,13 +15,21 @@ type result struct {
 	Img string `json:"img"`
 }
 
+const (
+	diagramsNodesJSON = "diagrams_nodes.json"
+	containerName     = "suapapa/diagrams-server-gvisor:latest"
+)
+
 var listenAddr string
 
 func main() {
-	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
+	flag.StringVar(&listenAddr, "l", ":8888", "listen address")
 	flag.Parse()
 
 	http.HandleFunc("/diagram", handleDiagram)
+	http.HandleFunc("/nodes", handleNodes)
+
+	log.Println("listen and serve at :8888...")
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
 		panic(err)
 	}
@@ -52,4 +62,32 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	cmd.Stdin = r.Body
 	cmd.Stdout = w
 	cmd.Run()
+}
+
+func handleNodes(w http.ResponseWriter, r *http.Request) {
+	// check if diagramsNodesJSON exists
+	_, err := os.Stat(diagramsNodesJSON)
+	// if not create one
+	if os.IsNotExist(err) {
+		fw, err := os.Create(diagramsNodesJSON)
+		if err != nil {
+			panic(err) // TODO: fix to internal server error
+		}
+		cmd := exec.Command("docker", "run",
+			// "-it",
+			"--rm",
+			// "--runtime=runsc",
+			// "--network=none",
+			"--entrypoint=/usr/local/bin/python",
+			containerName,
+			"listup_nodes.py",
+		)
+		cmd.Stdout = fw
+		cmd.Run()
+		fw.Close()
+	} else if err != nil {
+		panic(err) // TODO: fix to internal server error
+	}
+	// and serve
+	http.ServeFile(w, r, diagramsNodesJSON)
 }
