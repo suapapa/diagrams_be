@@ -13,6 +13,10 @@ Run:
 
 ## backend
 
+Make diagrams node json file:
+
+    $ docker run -it --rm --entrypoint=/usr/local/bin/python suapapa/diagrams-server-gvisor:latest listup_nodes.py
+
 Run:
 
     $ cd backend

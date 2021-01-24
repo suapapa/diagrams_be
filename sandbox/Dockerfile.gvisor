@@ -8,6 +8,7 @@ RUN apt update
 RUN apt install -y graphviz
 RUN pip install diagrams
 WORKDIR /diagrams
+COPY listup_nodes.py /diagrams/
 COPY --from=builder /server/server /diagrams/
 ENTRYPOINT ["/diagrams/server"]
 CMD [""]
