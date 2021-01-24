@@ -3,3 +3,5 @@ docker:
 
 push: docker
 	docker push suapapa/diagrams-server-gvisor:latest
+
+.PHONY: docker push
