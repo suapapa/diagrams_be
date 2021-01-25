@@ -53,6 +53,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	if true /* dev */ {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 	}
+	log.Println("hit diagram")
 	// pass it to diagrams container (gVisor)
 	// write result png to respone writer
 	name := "diagram_run_" + randHex(8)
@@ -75,6 +76,7 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 	if true /* dev */ {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 	}
+	log.Println("hit nodes")
 	// check if diagramsNodesJSON exists
 	_, err := os.Stat(diagramsNodesJSON)
 	// if not create one
