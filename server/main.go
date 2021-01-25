@@ -21,15 +21,21 @@ const (
 	containerName     = "suapapa/diagrams-server-gvisor:latest"
 )
 
-var listenAddr string
+var (
+	listenAddr string
+	dev        bool
+)
 
 func main() {
 	flag.StringVar(&listenAddr, "l", ":8888", "listen address")
+	flag.BoolVar(&dev, "d", false, "run in dev mode")
 	flag.Parse()
 
 	http.HandleFunc("/diagram", handleDiagram)
 	http.HandleFunc("/nodes", handleNodes)
-	http.Handle("/", http.FileServer(http.Dir("./dist")))
+	if !dev {
+		http.Handle("/", http.FileServer(http.Dir("./dist")))
+	}
 
 	log.Println("listen and serve at :8888...")
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
@@ -43,18 +49,17 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// read diagram python code from frontend
-	// io.Copy(os.Stdout, r.Body)
 	defer r.Body.Close()
-	w.Header().Set("Access-Control-Allow-Origin", "*")
+	if true /* dev */ {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+	}
 	// pass it to diagrams container (gVisor)
 	// write result png to respone writer
-
 	name := "diagram_run_" + randHex(8)
 	cmd := exec.Command("docker", "run",
 		"--name="+name,
 		"--rm",
 		"-i", // read stdin
-
 		// "--runtime=runsc",
 		"--network=none",
 		"--memory="+fmt.Sprint(memoryLimitBytes),
@@ -67,7 +72,9 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Access-Control-Allow-Origin", "*")
+	if true /* dev */ {
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+	}
 	// check if diagramsNodesJSON exists
 	_, err := os.Stat(diagramsNodesJSON)
 	// if not create one
@@ -77,10 +84,8 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 			panic(err) // TODO: fix to internal server error
 		}
 		cmd := exec.Command("docker", "run",
-			// "-it",
 			"--rm",
-			// "--runtime=runsc",
-			// "--network=none",
+			"--network=none",
 			"--entrypoint=/usr/local/bin/python",
 			containerName,
 			"listup_nodes.py",
