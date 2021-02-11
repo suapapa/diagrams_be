@@ -45,6 +45,7 @@ func main() {
 
 func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "POST" {
+		http.Error(w, "expected a POST", http.StatusBadRequest)
 		return
 	}
 
@@ -53,6 +54,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	if true /* dev */ {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 	}
+	w.Header().Set("Content-Type", "application/json")
 	log.Println("hit diagram")
 	// pass it to diagrams container (gVisor)
 	// write result png to respone writer
@@ -77,13 +79,15 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 	}
 	log.Println("hit nodes")
+	w.Header().Set("Content-Type", "application/json")
 	// check if diagramsNodesJSON exists
 	_, err := os.Stat(diagramsNodesJSON)
 	// if not create one
 	if os.IsNotExist(err) {
 		fw, err := os.Create(diagramsNodesJSON)
 		if err != nil {
-			panic(err) // TODO: fix to internal server error
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
 		}
 		cmd := exec.Command("docker", "run",
 			"--rm",
@@ -96,7 +100,8 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 		cmd.Run()
 		fw.Close()
 	} else if err != nil {
-		panic(err) // TODO: fix to internal server error
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
 	// and serve
 	http.ServeFile(w, r, diagramsNodesJSON)
