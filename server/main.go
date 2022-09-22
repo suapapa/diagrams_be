@@ -18,24 +18,21 @@ type result struct {
 
 const (
 	diagramsNodesJSON = "diagrams_nodes.json"
-	containerName     = "suapapa/diagrams-server-gvisor:latest"
 )
 
 var (
-	listenAddr string
-	dev        bool
+	listenAddr       string
+	sandboxContainer = "suapapa/diagrams-server-gvisor:latest"
 )
 
 func main() {
 	flag.StringVar(&listenAddr, "l", ":8888", "listen address")
-	flag.BoolVar(&dev, "d", false, "run in dev mode")
+	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams-server-gvisor:latest", "diagrams sandbox container")
 	flag.Parse()
 
 	http.HandleFunc("/diagram", handleDiagram)
 	http.HandleFunc("/nodes", handleNodes)
-	if !dev {
-		http.Handle("/", http.FileServer(http.Dir("./dist")))
-	}
+	// http.Handle("/", http.FileServer(http.Dir("./dist")))
 
 	log.Println("listen and serve at :8888...")
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
@@ -67,7 +64,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		"--network=none",
 		"--memory="+fmt.Sprint(memoryLimitBytes),
 
-		containerName,
+		sandboxContainer,
 	)
 	cmd.Stdin = r.Body
 	cmd.Stdout = w
@@ -93,7 +90,7 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 			"--rm",
 			"--network=none",
 			"--entrypoint=/usr/local/bin/python",
-			containerName,
+			sandboxContainer,
 			"listup_nodes.py",
 		)
 		cmd.Stdout = fw

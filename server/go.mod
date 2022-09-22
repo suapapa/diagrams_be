@@ -1,3 +1,3 @@
-module github.com/suapapa/diagrams-back/server
+module github.com/suapapa/go_diagrams/server
 
-go 1.16
+go 1.19

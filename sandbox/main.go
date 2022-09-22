@@ -11,12 +11,6 @@ import (
 	"path/filepath"
 )
 
-type result struct {
-	Msg string `json:"msg,omitempty"`
-	Err string `json:"err,omitempty"`
-	Img string `json:"img,omitempty"`
-}
-
 var (
 	diagramIn  = "diagram.py"
 	diagramOut = "diagrams_image.png"
@@ -39,7 +33,7 @@ func main() {
 	outStr := outBuf.String()
 	errStr := errBuf.String()
 	if err != nil {
-		printJson(&result{Msg: outStr, Err: errStr})
+		printJson(&diagrams.Output{Msg: outStr, Err: errStr})
 		return
 	}
 
@@ -62,7 +56,7 @@ func main() {
 	content, err := io.ReadAll(f)
 	checkErr(err)
 	encoded := base64.StdEncoding.EncodeToString(content)
-	printJson(&result{Img: encoded, Msg: outStr, Err: errStr})
+	printJson(&diagrams.Output{Img: encoded, Msg: outStr, Err: errStr})
 }
 
 func printJson(v any) {
@@ -77,7 +71,7 @@ func checkErr(err error) {
 
 func checkErrMsg(msg string, err error) {
 	if err != nil {
-		ret := result{
+		ret := diagrams.Output{
 			Msg: msg,
 			Err: err.Error(),
 		}
