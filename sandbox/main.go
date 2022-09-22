@@ -1,18 +1,18 @@
 package main
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"os/exec"
 	"path/filepath"
 )
 
 type result struct {
-	Msg string `json:"msg"`
+	Msg string `json:"msg,omitempty"`
 	Err string `json:"err,omitempty"`
 	Img string `json:"img,omitempty"`
 }
@@ -30,9 +30,18 @@ func main() {
 	w.Close()
 
 	// run diagrams code with python (this program should run in gVisor)
+	outBuf := &bytes.Buffer{}
+	errBuf := &bytes.Buffer{}
 	cmd := exec.Command("python", diagramIn)
-	out, err := cmd.Output()
-	checkErrMsg(err, string(out))
+	cmd.Stdout = outBuf
+	cmd.Stderr = errBuf
+	err = cmd.Run()
+	outStr := outBuf.String()
+	errStr := errBuf.String()
+	if err != nil {
+		printJson(&result{Msg: outStr, Err: errStr})
+		return
+	}
 
 	// find out diagramOut exists
 	match, err := filepath.Glob("*.png")
@@ -50,22 +59,27 @@ func main() {
 	checkErr(err)
 	defer f.Close()
 
-	content, err := ioutil.ReadAll(f)
+	content, err := io.ReadAll(f)
+	checkErr(err)
 	encoded := base64.StdEncoding.EncodeToString(content)
-	json.NewEncoder(os.Stdout).Encode(
-		&result{Img: encoded, Msg: string(out)},
-	)
+	printJson(&result{Img: encoded, Msg: outStr, Err: errStr})
+}
+
+func printJson(v any) {
+	enc := json.NewEncoder(os.Stdout)
+	enc.SetIndent("", "  ")
+	enc.Encode(v)
 }
 
 func checkErr(err error) {
-	checkErrMsg(err, "")
+	checkErrMsg("", err)
 }
 
-func checkErrMsg(err error, msg string) {
+func checkErrMsg(msg string, err error) {
 	if err != nil {
 		ret := result{
-			Err: err.Error(),
 			Msg: msg,
+			Err: err.Error(),
 		}
 
 		json.NewEncoder(os.Stdout).Encode(&ret)

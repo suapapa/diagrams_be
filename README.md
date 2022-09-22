@@ -11,6 +11,10 @@ Example Run:
 
     $ cat sample/k8s_diagram.py | docker run -i --rm diagrams_sandbox:dev
 
+Explore container:
+
+    $ docker run -it --rm -v $(pwd)/sample:/sample --entrypoint /bin/bash diagrams_sandbox:dev
+
 ## server
 
 Make diagrams node json file:
