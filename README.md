@@ -2,13 +2,12 @@
 
 ## server
 
-Make diagrams node json file:
+Build:
 
-    $ cd server
-    $ make
+    $ go build
 
 Example Run:
 
-    $ cd server
-    $ go build && ./backend -l :8888
-    $ cat ../sample/k8s_diagram.py | curl -X POST --data "$(</dev/stdin)" http://localhost:8888/diagram
+    $ ./diagram_srv
+
+    $ cat sample/k8s_diagram.py | curl -X POST -d "$(</dev/stdin)" http://localhost:8080/diagram
