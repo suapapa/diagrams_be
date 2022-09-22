@@ -1,6 +1,6 @@
-FROM golang:1.15 as builder
-WORKDIR /server
-COPY ./main.go /server/
+FROM golang:1.19 as builder
+WORKDIR /src
+COPY . .
 RUN CGO_ENABLED=0 go build
 
 FROM python:3
@@ -8,7 +8,7 @@ RUN apt update
 RUN apt install -y graphviz
 RUN pip install diagrams
 WORKDIR /diagrams
-COPY listup_nodes.py /diagrams/
-COPY --from=builder /server/server /diagrams/
-ENTRYPOINT ["/diagrams/server"]
+COPY listup_nodes.py .
+COPY --from=builder /src/sandbox .
+ENTRYPOINT ["/diagrams/sandbox"]
 CMD [""]

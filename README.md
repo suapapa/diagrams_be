@@ -4,12 +4,12 @@
 
 Build and push docker image:
 
-    $ cd sandox
-    $ make
+    $ cd sandbox
+    $ docker build -f Dockerfile.gvisor -t diagrams_sandbox:dev .
 
 Example Run:
 
-    $ cat sample/k8s_diagram.py | docker run -i --rm suapapa/diagrams-server-gvisor 
+    $ cat sample/k8s_diagram.py | docker run -i --rm diagrams_sandbox:dev
 
 ## server
 

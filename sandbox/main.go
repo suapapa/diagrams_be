@@ -12,8 +12,9 @@ import (
 )
 
 type result struct {
-	Err string `json:"err"`
-	Img string `json:"img"`
+	Msg string `json:"msg"`
+	Err string `json:"err,omitempty"`
+	Img string `json:"img,omitempty"`
 }
 
 var (
@@ -30,8 +31,8 @@ func main() {
 
 	// run diagrams code with python (this program should run in gVisor)
 	cmd := exec.Command("python", diagramIn)
-	err = cmd.Run()
-	checkErr(err)
+	out, err := cmd.Output()
+	checkErrMsg(err, string(out))
 
 	// find out diagramOut exists
 	match, err := filepath.Glob("*.png")
@@ -51,12 +52,23 @@ func main() {
 
 	content, err := ioutil.ReadAll(f)
 	encoded := base64.StdEncoding.EncodeToString(content)
-	json.NewEncoder(os.Stdout).Encode(result{Img: encoded})
+	json.NewEncoder(os.Stdout).Encode(
+		&result{Img: encoded, Msg: string(out)},
+	)
 }
 
 func checkErr(err error) {
+	checkErrMsg(err, "")
+}
+
+func checkErrMsg(err error, msg string) {
 	if err != nil {
-		json.NewEncoder(os.Stdout).Encode(result{Err: err.Error()})
+		ret := result{
+			Err: err.Error(),
+			Msg: msg,
+		}
+
+		json.NewEncoder(os.Stdout).Encode(&ret)
 		os.Exit(-1)
 	}
 }
