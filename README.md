@@ -22,7 +22,7 @@ Check its readiness via `/ready` endpoint.
 Get diagram:
 
 ```bash
-cat sample/k8s_diagram.py | curl -X POST -d "$(</dev/stdin)" http://localhost:8080/diagram
+curl -X POST -d "$(cat sample/k8s_diagram.py)" http://localhost:8080/diagram
 ```
 
 Get node info:
@@ -36,11 +36,12 @@ curl -X GET http://localhost:8080/nodes
 Build image:
 
 ```bash
-docker build -t diagrams_srv:dev .
+docker build -t suapapa/diagrams_srv:dev .
+docker push suapapa/diagrams_srv:dev
 ```
 
 Run (only on linux):
 
 ```bash
-docker run -it --rm -v /var/run:/var/run -p 8080:8080 diagrams_srv:dev
+sudo docker run -it --rm -v /var/run:/var/run -p 8080:8080 suapapa/diagrams_srv:dev
 ```
