@@ -2,7 +2,7 @@
 git tag -a $1 -m "add tag for $1"
 git push --tags
 
-IMAGE_TAG=gcr.io/homin-dev/diagrams_srv
+IMAGE_TAG=gcr.io/homin-dev/diagrams_be
 IMAGE_NAME=$IMAGE_TAG:$1
 IMAGE_NAME_LATEST=$IMAGE_TAG:latest
 

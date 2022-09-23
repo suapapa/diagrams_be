@@ -65,7 +65,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	// if true /* dev */ {
-	// 	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	// }
 
 	w.Header().Set("Content-Type", "application/json")
@@ -94,7 +94,7 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// if true /* dev */ {
-	// 	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	// }
 	// log.Println("hit nodes")
 	w.Header().Set("Content-Type", "application/json")
@@ -102,6 +102,7 @@ func handleNodes(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleReady(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	if ready.Load() {
 		w.WriteHeader(http.StatusOK)
 		return

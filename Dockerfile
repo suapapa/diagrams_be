@@ -4,7 +4,7 @@ COPY . .
 RUN CGO_ENABLED=0 go build -o app
 
 FROM docker
-WORKDIR /diagrams_srv
+WORKDIR /diagrams_be
 COPY --from=builder /src/app .
-ENTRYPOINT ["/diagrams_srv/app"]
+ENTRYPOINT ["/diagrams_be/app"]
 CMD [""]

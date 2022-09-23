@@ -1,4 +1,4 @@
-# diagrams_srv
+# diagrams_be
 
 API server for the [diagrams](https://diagrams.mingrammer.com/)
 
@@ -13,7 +13,7 @@ go build
 Example Run:
 
 ```bash
-./diagram_srv
+./diagram_be
 ```
 
 It starts download docker image of the diagrams and node json.
@@ -36,12 +36,12 @@ curl -X GET http://localhost:8080/nodes
 Build image:
 
 ```bash
-docker build -t suapapa/diagrams_srv:dev .
-docker push suapapa/diagrams_srv:dev
+docker build -t suapapa/diagrams_be:dev .
+docker push suapapa/diagrams_be:dev
 ```
 
 Run (only on linux):
 
 ```bash
-sudo docker run -it --rm -v /var/run:/var/run -p 8080:8080 suapapa/diagrams_srv:dev
+sudo docker run -it --rm -v /var/run:/var/run -p 8080:8080 suapapa/diagrams_be:dev
 ```

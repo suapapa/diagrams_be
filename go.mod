@@ -1,4 +1,4 @@
-module github.com/suapapa/diagrams_srv
+module github.com/suapapa/diagrams_be
 
 go 1.19
 
