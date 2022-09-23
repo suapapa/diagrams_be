@@ -20,12 +20,14 @@ const (
 var (
 	listenAddr       string
 	sandboxContainer string
+	urlPrefix        string
 	ready            atomic.Bool
 )
 
 func main() {
 	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
 	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams:latest", "diagrams container image")
+	flag.StringVar(&urlPrefix, "p", "/diagrams-srv", "url prefix")
 	flag.Parse()
 
 	go func() {
@@ -34,12 +36,16 @@ func main() {
 		}
 	}()
 
-	http.HandleFunc("/diagram", handleDiagram)
-	http.HandleFunc("/nodes", handleNodes)
-	http.HandleFunc("/ready", handleReady)
+	if urlPrefix[0] != '/' {
+		urlPrefix = "/" + urlPrefix
+	}
+
+	http.HandleFunc(urlPrefix+"/diagram", handleDiagram)
+	http.HandleFunc(urlPrefix+"/nodes", handleNodes)
+	http.HandleFunc(urlPrefix+"/ready", handleReady)
 	// http.Handle("/", http.FileServer(http.Dir("./dist")))
 
-	log.Println("listen and serve at :8888...")
+	log.Printf("listen and serve at %s...", listenAddr)
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
 		panic(err)
 	}
