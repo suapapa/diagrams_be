@@ -8,6 +8,10 @@ import (
 	"github.com/pkg/errors"
 )
 
+const (
+	diagramsNodesJSON = "diagrams_nodes.json"
+)
+
 var (
 	diagramsNodesBytes []byte
 )
@@ -37,6 +41,5 @@ func prepare() error {
 	diagramsNodesBytes = buff.Bytes()
 
 	log.Println("ready!")
-	ready.Store(true)
 	return nil
 }
