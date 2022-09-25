@@ -21,6 +21,7 @@ var (
 	listenAddr       string
 	sandboxContainer string
 	urlPrefix        string
+	maxContentLength int64
 	ready            atomic.Bool
 )
 
@@ -28,6 +29,7 @@ func main() {
 	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
 	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams:latest", "diagrams container image")
 	flag.StringVar(&urlPrefix, "p", "/diagrams-srv", "url prefix")
+	flag.Int64Var(&maxContentLength, "m", 2048, "max input length")
 	flag.Parse()
 
 	go func() {
@@ -58,6 +60,11 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 
 	if r.Method != "POST" {
 		http.Error(w, "expected a POST", http.StatusBadRequest)
+		return
+	}
+
+	if maxContentLength > 0 && r.ContentLength > maxContentLength {
+		http.Error(w, "too big input", http.StatusRequestEntityTooLarge)
 		return
 	}
 
