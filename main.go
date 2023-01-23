@@ -82,7 +82,8 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// check db if hash exists
 	// if exists return saved diagram
 
-	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Content-Type", "application/json")
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
