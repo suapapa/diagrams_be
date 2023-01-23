@@ -1,11 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"net/http"
 	_ "net/http/pprof"
 	"os/exec"
+	"strings"
 )
 
 const (
@@ -51,6 +53,11 @@ func main() {
 	}
 }
 
+type codeReq struct {
+	Code string `json:"code"`
+	Hash string `json:"hash,omitempty"`
+}
+
 func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// read diagram python code from frontend
 	defer r.Body.Close()
@@ -65,14 +72,20 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// if true /* dev */ {
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	// }
+	var req codeReq
+	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+		http.Error(w, "invalid json", http.StatusBadRequest)
+	}
 
+	buf := strings.NewReader(req.Code)
+	// check db if hash exists
+	// if exists return saved diagram
+
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
-	name := "diagrams_" + randHex(8)
+	name := "diagrams_" + req.Hash
 	log.Infof("running %s", name)
 	cmd := exec.Command("docker", "run",
 		"--name="+name,
@@ -81,14 +94,11 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		// "--runtime=runsc",
 		"--network=none",
 		"--memory="+fmt.Sprint(memoryLimitBytes),
-
 		sandboxContainer,
 	)
-	cmd.Stdin = r.Body
+	cmd.Stdin = buf
 	cmd.Stdout = w // http.ResponseWriter로 JSON 출력
-	if err := cmd.Run(); err != nil {
-		http.Error(w, "too big input", http.StatusInternalServerError)
-	}
+	cmd.Run()
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
