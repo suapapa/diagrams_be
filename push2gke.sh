@@ -1,6 +1,6 @@
 #!/bin/bash
-git tag -a $1 -m "add tag for $1"
-git push --tags
+
+set -e
 
 IMAGE_TAG=gcr.io/homin-dev/diagrams_be
 IMAGE_NAME=$IMAGE_TAG:$1
@@ -11,3 +11,6 @@ docker push $IMAGE_NAME
 
 docker tag $IMAGE_NAME $IMAGE_NAME_LATEST
 docker push $IMAGE_NAME_LATEST
+
+git tag -a $1 -m "add tag for $1"
+git push --tags
