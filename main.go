@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
 	"net/http"
 	_ "net/http/pprof"
 	"os/exec"
@@ -18,6 +17,9 @@ var (
 	sandboxContainer string
 	urlPrefix        string
 	maxContentLength int64
+
+	programName = "diagrams"
+	programVer  = "dev"
 )
 
 func main() {
@@ -43,7 +45,7 @@ func main() {
 	http.HandleFunc(urlPrefix+"/diagram", handleDiagram)
 	http.HandleFunc(urlPrefix+"/nodes", handleNodes)
 
-	log.Printf("listen and serve at %s...", listenAddr)
+	log.Infof("listen and serve at %s...", listenAddr)
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
 		panic(err)
 	}
@@ -71,7 +73,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
 	name := "diagrams_" + randHex(8)
-	log.Printf("running %s", name)
+	log.Infof("running %s", name)
 	cmd := exec.Command("docker", "run",
 		"--name="+name,
 		"--rm",
@@ -88,10 +90,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
-	// if true /* dev */ {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	// }
-	// log.Println("hit nodes")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(diagramsNodesBytes)
 }

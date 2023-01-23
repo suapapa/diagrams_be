@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"log"
 	"os/exec"
 
 	"github.com/pkg/errors"
@@ -40,6 +39,6 @@ func prepare() error {
 
 	diagramsNodesBytes = buff.Bytes()
 
-	log.Println("ready!")
+	log.Info("sandox image ready!")
 	return nil
 }
