@@ -1,4 +1,5 @@
 FROM golang:1.19 as builder
+ARG PROGRAM_VER=dev-docker
 WORKDIR /src
 COPY . .
 RUN CGO_ENABLED=0 go build -ldflags "-X main.programVer=${PROGRAM_VER}" -o app
