@@ -47,11 +47,14 @@ func main() {
 
 	log.Infof("listen and serve at %s...", listenAddr)
 	if err := http.ListenAndServe(listenAddr, nil); err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 }
 
 func handleDiagram(w http.ResponseWriter, r *http.Request) {
+	// read diagram python code from frontend
+	defer r.Body.Close()
+
 	if r.Method != "POST" {
 		http.Error(w, "expected a POST", http.StatusBadRequest)
 		return
@@ -61,9 +64,6 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "too big input", http.StatusRequestEntityTooLarge)
 		return
 	}
-
-	// read diagram python code from frontend
-	defer r.Body.Close()
 
 	// if true /* dev */ {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -86,7 +86,9 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	)
 	cmd.Stdin = r.Body
 	cmd.Stdout = w // http.ResponseWriter로 JSON 출력
-	cmd.Run()
+	if err := cmd.Run(); err != nil {
+		http.Error(w, "too big input", http.StatusInternalServerError)
+	}
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
