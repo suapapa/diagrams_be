@@ -77,6 +77,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "invalid json", http.StatusBadRequest)
 	}
 
+	log.Info("got hash: ", req.Hash)
 	buf := strings.NewReader(req.Code)
 	// check db if hash exists
 	// if exists return saved diagram
