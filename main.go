@@ -85,6 +85,7 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
 	name := "diagrams_" + req.Hash
