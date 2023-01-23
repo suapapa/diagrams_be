@@ -1,6 +1,8 @@
 package main
 
 import (
+	"crypto/sha1"
+	"encoding/hex"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -61,6 +63,8 @@ type codeReq struct {
 func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// read diagram python code from frontend
 	defer r.Body.Close()
+	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
+	w.Header().Set("Access-Control-Allow-Methods", "POST,OPTIONS")
 
 	if r.Method != "POST" {
 		http.Error(w, "expected a POST", http.StatusBadRequest)
@@ -77,13 +81,18 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "invalid json", http.StatusBadRequest)
 	}
 
-	log.Info("got hash: ", req.Hash)
+	if req.Hash == "" {
+		h := sha1.New()
+		h.Write([]byte(req.Code))
+		req.Hash = hex.EncodeToString(h.Sum(nil))
+	}
+
+	log.Debugf("got code: %s", req.Code)
+	log.Infof("got hash: %s", req.Hash)
 	buf := strings.NewReader(req.Code)
 	// check db if hash exists
 	// if exists return saved diagram
 
-	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
-	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	// pass it to diagrams container (gVisor)
@@ -105,7 +114,8 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", r.Header.Get("Origin"))
+	w.Header().Set("Access-Control-Allow-Methods", "GET,OPTIONS")
+	w.WriteHeader(http.StatusOK)
 	w.Write(diagramsNodesBytes)
 }
