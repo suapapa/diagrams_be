@@ -13,4 +13,6 @@ docker tag $IMAGE_NAME $IMAGE_NAME_LATEST
 docker push $IMAGE_NAME_LATEST
 
 git tag -a $1 -m "add tag for $1"
-git push --tags
+git push origin main --tags
+
+k rollout restart deployment dsb-api

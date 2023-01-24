@@ -87,17 +87,17 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		req.Hash = hex.EncodeToString(h.Sum(nil))
 	}
 
-	log.Debugf("got code: %s", req.Code)
-	log.Infof("got hash: %s", req.Hash)
+	log.Debugf("code: %s", req.Code)
+	log.Infof("hash: %s", req.Hash)
 	buf := strings.NewReader(req.Code)
-	// check db if hash exists
+	// TODO: check db if hash exists
 	// if exists return saved diagram
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
-	name := "diagrams_" + req.Hash
+	name := "diagrams_" + randHex(8)
 	log.Infof("running %s", name)
 	cmd := exec.Command("docker", "run",
 		"--name="+name,
