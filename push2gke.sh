@@ -15,4 +15,4 @@ docker push $IMAGE_NAME_LATEST
 git tag -a $1 -m "add tag for $1"
 git push origin main --tags
 
-k rollout restart deployment dsb-api
+kubectl rollout restart deployment dsb-api
