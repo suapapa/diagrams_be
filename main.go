@@ -1,11 +1,13 @@
 package main
 
 import (
+	"bytes"
 	"crypto/sha1"
 	"encoding/hex"
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io"
 	"net/http"
 	_ "net/http/pprof"
 	"os/exec"
@@ -92,12 +94,11 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 
 	log.Debugf("code: %s", req.Code)
 	log.Infof("hash: %s", req.Hash)
-	buf := strings.NewReader(req.Code)
+	inBuf := strings.NewReader(req.Code)
 	// TODO: check db if hash exists
 	// if exists return saved diagram
 
 	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusOK)
 	// pass it to diagrams container (gVisor)
 	// write diagrams.Result png to respone writer
 	name := "diagrams_" + randHex(8)
@@ -111,9 +112,19 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 		"--memory="+fmt.Sprint(memoryLimitBytes),
 		sandboxContainer,
 	)
-	cmd.Stdin = buf
-	cmd.Stdout = w // http.ResponseWriter로 JSON 출력
-	cmd.Run()
+
+	outBuf := bytes.NewBuffer(nil)
+	cmd.Stdin = inBuf
+	cmd.Stdout = outBuf // http.ResponseWriter로 JSON 출력
+
+	if err := cmd.Run(); err != nil {
+		log.Errorf("docker run error: %s, hash=%s", err, req.Hash)
+		http.Error(w, "docker run error", http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+	io.Copy(w, outBuf)
 }
 
 func handleNodes(w http.ResponseWriter, r *http.Request) {
