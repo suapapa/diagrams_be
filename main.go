@@ -27,6 +27,9 @@ var (
 )
 
 func main() {
+	log.WithField("alert", "telegram").Infof("%s start", programName)
+	defer log.WithField("alert", "telegram").Infof("%s exit", programName)
+
 	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
 	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams:latest", "diagrams container image")
 	flag.StringVar(&urlPrefix, "p", "/diagrams-srv", "url prefix")
