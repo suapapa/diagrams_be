@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"time"
 
@@ -10,7 +11,8 @@ import (
 )
 
 var (
-	log *logrus.Entry
+	log        *logrus.Entry
+	fluentHost = os.Getenv("FLUENT_HOST")
 )
 
 func init() {
@@ -34,20 +36,24 @@ func initLogger() {
 	})
 
 	// fluent hook
-	fluentHook, err := logrus_fluent.NewWithConfig(logrus_fluent.Config{
-		Host: "fluent",
-		Port: 24224,
-	})
-	if err != nil {
-		panic(err)
+	if fluentHost == "" {
+		fluentHook, err := logrus_fluent.NewWithConfig(logrus_fluent.Config{
+			Host: fluentHost,
+			Port: 24224,
+		})
+		if err != nil {
+			panic(err)
+		}
+		fluentHook.SetMessageField("message")
+		fluentHook.SetLevels([]logrus.Level{
+			logrus.PanicLevel, logrus.FatalLevel, logrus.ErrorLevel, logrus.WarnLevel,
+			logrus.InfoLevel,
+		})
+		fluentHook.SetTag("app." + programName)
+		logger.AddHook(fluentHook)
+	} else {
+		fmt.Println("FLUENT_HOST is not set. skip fluentd hook")
 	}
-	fluentHook.SetMessageField("message")
-	fluentHook.SetLevels([]logrus.Level{
-		logrus.PanicLevel, logrus.FatalLevel, logrus.ErrorLevel, logrus.WarnLevel,
-		logrus.InfoLevel,
-	})
-	fluentHook.SetTag("app." + programName)
-	logger.AddHook(fluentHook)
 }
 
 // log formatter to print log in KST timezone
