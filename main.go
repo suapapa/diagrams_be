@@ -10,6 +10,7 @@ import (
 	"io"
 	"net/http"
 	_ "net/http/pprof"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -26,6 +27,8 @@ var (
 
 	programName = "diagrams"
 	programVer  = "dev"
+
+	withGVisor = os.Getenv("WITH_GVISOR") == "1"
 )
 
 func main() {
@@ -103,15 +106,29 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// write diagrams.Result png to respone writer
 	name := "diagrams_" + randHex(8)
 	log.Infof("running %s", name)
-	cmd := exec.Command("docker", "run",
-		"--name="+name,
-		"--rm",
-		"-i", // read stdin
-		// "--runtime=runsc",
-		"--network=none",
-		"--memory="+fmt.Sprint(memoryLimitBytes),
-		sandboxContainer,
-	)
+
+	var cmd *exec.Cmd
+	if withGVisor {
+		cmd = exec.Command("docker", "run",
+			"--name="+name,
+			"--rm",
+			"-i", // read stdin
+			"--runtime=runsc",
+			"--network=none",
+			"--memory="+fmt.Sprint(memoryLimitBytes),
+			sandboxContainer,
+		)
+	} else {
+		cmd = exec.Command("docker", "run",
+			"--name="+name,
+			"--rm",
+			"-i", // read stdin
+			// "--runtime=runsc",
+			"--network=none",
+			"--memory="+fmt.Sprint(memoryLimitBytes),
+			sandboxContainer,
+		)
+	}
 
 	outBuf := bytes.NewBuffer(nil)
 	cmd.Stdin = inBuf
