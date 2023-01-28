@@ -24,6 +24,7 @@ var (
 	sandboxContainer string
 	urlPrefix        string
 	maxContentLength int64
+	pullImage        = false
 
 	programName = "diagrams"
 	programVer  = "dev"
@@ -36,6 +37,7 @@ func main() {
 	defer log.WithField("alert", "telegram").Infof("%s exit", programName)
 
 	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
+	flag.BoolVar(&pullImage, "pull", false, "pull image")
 	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams:latest", "diagrams container image")
 	flag.StringVar(&urlPrefix, "p", "/diagrams-srv", "url prefix")
 	flag.Int64Var(&maxContentLength, "m", 2048, "max input length")
