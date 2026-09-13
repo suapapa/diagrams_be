@@ -10,6 +10,7 @@ import (
 	"io"
 	"net/http"
 	_ "net/http/pprof"
+	"os"
 	"os/exec"
 	"strings"
 )
@@ -23,9 +24,12 @@ var (
 	sandboxContainer string
 	urlPrefix        string
 	maxContentLength int64
+	pullImage        = false
 
 	programName = "diagrams"
 	programVer  = "dev"
+
+	withGVisor = os.Getenv("WITH_GVISOR") == "1"
 )
 
 func main() {
@@ -33,6 +37,7 @@ func main() {
 	defer log.WithField("alert", "telegram").Infof("%s exit", programName)
 
 	flag.StringVar(&listenAddr, "l", ":8080", "listen address")
+	flag.BoolVar(&pullImage, "pull", false, "pull image")
 	flag.StringVar(&sandboxContainer, "c", "suapapa/diagrams:latest", "diagrams container image")
 	flag.StringVar(&urlPrefix, "p", "/diagrams-srv", "url prefix")
 	flag.Int64Var(&maxContentLength, "m", 2048, "max input length")
@@ -103,15 +108,29 @@ func handleDiagram(w http.ResponseWriter, r *http.Request) {
 	// write diagrams.Result png to respone writer
 	name := "diagrams_" + randHex(8)
 	log.Infof("running %s", name)
-	cmd := exec.Command("docker", "run",
-		"--name="+name,
-		"--rm",
-		"-i", // read stdin
-		// "--runtime=runsc",
-		"--network=none",
-		"--memory="+fmt.Sprint(memoryLimitBytes),
-		sandboxContainer,
-	)
+
+	var cmd *exec.Cmd
+	if withGVisor {
+		cmd = exec.Command("docker", "run",
+			"--name="+name,
+			"--rm",
+			"-i", // read stdin
+			"--runtime=runsc",
+			"--network=none",
+			"--memory="+fmt.Sprint(memoryLimitBytes),
+			sandboxContainer,
+		)
+	} else {
+		cmd = exec.Command("docker", "run",
+			"--name="+name,
+			"--rm",
+			"-i", // read stdin
+			// "--runtime=runsc",
+			"--network=none",
+			"--memory="+fmt.Sprint(memoryLimitBytes),
+			sandboxContainer,
+		)
+	}
 
 	outBuf := bytes.NewBuffer(nil)
 	cmd.Stdin = inBuf

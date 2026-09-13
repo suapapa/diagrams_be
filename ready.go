@@ -17,15 +17,17 @@ var (
 
 // This will pull diagrams image and extract node list
 func prepare() error {
-	cmd := exec.Command("docker", "pull",
-		sandboxContainer,
-	)
-	if err := cmd.Run(); err != nil {
-		return errors.Wrap(err, "fail to pull image")
+	if pullImage {
+		cmd := exec.Command("docker", "pull",
+			sandboxContainer,
+		)
+		if err := cmd.Run(); err != nil {
+			return errors.Wrap(err, "fail to pull image")
+		}
 	}
 
 	buff := &bytes.Buffer{}
-	cmd = exec.Command("docker", "run",
+	cmd := exec.Command("docker", "run",
 		"--rm",
 		"--network=none",
 		"--entrypoint=/usr/local/bin/python",
